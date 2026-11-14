@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Mew — Marketing com identidade. Estratégia, criatividade e tecnologia para marcas que querem crescer." name="description"/>
+<title>Mew — Marketing com identidade</title>
+<style>
+:root{--brown:#49372f;--brown2:#6c5145;--beige:#e9dfd2;--cream:#f7f3ed;--sand:#d5c4b1;--ink:#29231f;--muted:#776d65;--white:#fffdfa;--line:#ded4c9;--serif:Georgia,'Times New Roman',serif;--sans:Inter,Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.55}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}.eyebrow{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brown2);font-weight:700}.section{padding:104px 0}.section-head{max-width:720px;margin-bottom:48px}.section h2{font:clamp(2.25rem,5vw,4.2rem)/1.05 var(--serif);letter-spacing:-.045em;margin:14px 0 18px;font-weight:400}.lead{font-size:1.08rem;color:var(--muted);max-width:680px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:15px 21px;border:1px solid var(--brown);background:var(--brown);color:var(--white);border-radius:3px;font-weight:650;font-size:.88rem;transition:.25s;cursor:pointer}.btn:hover{background:var(--brown2);transform:translateY(-2px)}.btn.secondary{background:transparent;color:var(--brown)}.btn.secondary:hover{background:var(--beige)}.btn.light{background:var(--beige);border-color:var(--beige);color:var(--brown)}.topbar{background:var(--brown);color:#f8f2ea;text-align:center;padding:8px 16px;font-size:.72rem;letter-spacing:.08em}.header{position:sticky;top:0;z-index:20;background:rgba(247,243,237,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(73,55,47,.12)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand img{display:block;width:104px;max-height:52px;object-fit:contain}.brandmark{font:2rem var(--serif);letter-spacing:-.08em;color:var(--brown)}.links{display:flex;align-items:center;gap:27px;font-size:.82rem;color:var(--brown)}.links a:hover{opacity:.6}.nav .btn{padding:11px 16px}.menu{display:none;background:none;border:0;color:var(--brown);font-size:1.5rem;cursor:pointer}.hero{background:var(--beige);overflow:hidden;position:relative}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;min-height:660px;padding:82px 0}.hero h1{font:clamp(3.1rem,6vw,5.7rem)/.99 var(--serif);letter-spacing:-.055em;font-weight:400;margin:20px 0 25px;max-width:700px}.hero h1 em{font-style:italic;color:var(--brown2)}.hero p{font-size:1.1rem;color:#65564d;max-width:530px;margin-bottom:30px}.actions{display:flex;flex-wrap:wrap;gap:12px}.micro{font-size:.76rem;color:var(--muted);margin-top:20px}.hero-art{position:relative;min-height:480px;background:var(--brown);overflow:hidden;display:flex;align-items:center;justify-content:center}.hero-art:before{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(255,255,255,.25);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}.hero-art:after{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(255,255,255,.2);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}.hero-art-inner{position:relative;z-index:1;text-align:center;color:var(--beige);padding:30px}.hero-art-inner strong{font:clamp(4rem,8vw,7.8rem)/.9 var(--serif);font-weight:400;letter-spacing:-.08em;display:block}.hero-art-inner span{display:block;font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;margin-top:24px}.floating{position:absolute;background:var(--cream);color:var(--brown);padding:14px 17px;font:italic 1rem var(--serif);box-shadow:0 12px 30px #21160f22}.float1{top:14%;left:5%}.float2{right:5%;bottom:13%}.ticker{background:var(--brown);color:var(--beige);padding:17px 0;overflow:hidden;white-space:nowrap}.ticker div{font:1rem var(--serif);letter-spacing:.13em;text-transform:uppercase;text-align:center}.ticker span{padding:0 24px;color:#cbb6a3}.pain-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.pain{border:1px solid var(--line);padding:26px 22px;min-height:220px;background:var(--white)}.num{font:1.8rem var(--serif);color:#a58d79}.pain h3,.service h3{font:1.5rem/1.15 var(--serif);font-weight:400;margin:22px 0 10px}.pain p,.service p{font-size:.9rem;color:var(--muted);margin:0}.statement{background:var(--brown);color:var(--cream)}.statement .eyebrow{color:#d3bda9}.statement h2{max-width:850px}.statement p{color:#d9cdc2;max-width:730px;font-size:1.06rem}.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:35px;margin-top:55px}.pillar{border-top:1px solid #8c766a;padding-top:20px}.pillar b{font:1.35rem var(--serif);font-weight:400}.pillar p{font-size:.88rem;margin-top:10px}.services{background:#f1e9df}.service-feature{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:stretch;background:var(--white);padding:18px;margin-bottom:18px}.service-visual{min-height:340px;background:linear-gradient(135deg,#cdb9a5,#8e7060);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}.service-visual:before{content:"";width:70%;height:72%;border:1px solid #ffffff88;position:absolute;transform:rotate(-9deg)}.service-visual:after{content:"";width:48%;height:60%;border:1px solid #ffffff88;position:absolute;transform:rotate(9deg)}.service-visual span{z-index:1;color:#fff8f0;font:clamp(2rem,4vw,4rem) var(--serif);letter-spacing:-.04em}.service-copy{padding:34px 34px 34px 10px;align-self:center}.service-copy h3{font:2.5rem/1.05 var(--serif);font-weight:400;margin:14px 0}.service-copy p{color:var(--muted)}.service-copy ul{padding-left:18px;color:var(--muted);font-size:.88rem;line-height:1.9;margin:18px 0 24px}.service-list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{background:var(--white);padding:28px;min-height:260px;border:1px solid var(--line)}.service h3{margin-top:12px}.service a{display:inline-block;margin-top:20px;font-size:.82rem;font-weight:700;color:var(--brown);border-bottom:1px solid var(--sand);padding-bottom:4px}.differentials{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px}.diff-list{display:grid;grid-template-columns:1fr 1fr;gap:30px}.diff{border-top:1px solid var(--line);padding-top:18px}.diff h3{font:1.4rem var(--serif);font-weight:400;margin:0 0 8px}.diff p{font-size:.88rem;color:var(--muted);margin:0}.quote{font:italic 1.65rem/1.25 var(--serif);color:var(--brown);margin-top:38px;max-width:420px}.projects{background:var(--beige)}.project-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:20px}.project{background:var(--cream)}.project-img{height:290px;display:flex;align-items:center;justify-content:center;background:linear-gradient(140deg,#6e5548,#bca58f);color:#fff;font:2.7rem var(--serif)}.project:nth-child(2) .project-img{background:linear-gradient(140deg,#c5b19d,#e6d8c8);color:var(--brown)}.project:nth-child(3) .project-img{background:linear-gradient(140deg,#877263,#d0bda9);color:#fff}.project-meta{padding:22px}.project-meta small{letter-spacing:.12em;color:var(--brown2);font-size:.67rem}.project-meta h3{font:1.6rem var(--serif);font-weight:400;margin:8px 0}.project-meta p{font-size:.86rem;color:var(--muted)}.text-link{font-size:.83rem;font-weight:700;color:var(--brown);border-bottom:1px solid var(--sand);padding-bottom:4px}.process{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}.steps{border-top:1px solid var(--line)}.step{display:grid;grid-template-columns:55px 1fr;gap:15px;padding:23px 0;border-bottom:1px solid var(--line)}.step strong{font:1.5rem var(--serif);color:#a58d79;font-weight:400}.step h3{font:1.35rem var(--serif);font-weight:400;margin:0 0 6px}.step p{font-size:.88rem;color:var(--muted);margin:0}.about{background:var(--brown);color:var(--cream)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.about-visual{min-height:420px;background:var(--beige);color:var(--brown);display:flex;align-items:center;justify-content:center;position:relative}.about-visual:before{content:"MEW";font:clamp(6rem,14vw,12rem) var(--serif);letter-spacing:-.1em}.about-visual:after{content:"MARKETING COM IDENTIDADE";position:absolute;bottom:28px;letter-spacing:.2em;font-size:.65rem}.about .eyebrow{color:#d5c1ae}.about p{color:#ddd1c6}.about .btn{margin-top:16px}.testimonials{background:#f1e9df}.testimonial-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.testimonial{background:var(--white);padding:32px;border:1px solid var(--line)}.testimonial blockquote{font:italic 1.35rem/1.35 var(--serif);margin:0 0 26px;color:var(--brown)}.testimonial b{font-size:.85rem}.testimonial small{display:block;color:var(--muted);margin-top:4px}.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}.faq-list{border-top:1px solid var(--line)}.faq-item{border-bottom:1px solid var(--line)}.faq-q{width:100%;padding:21px 0;background:none;border:0;text-align:left;display:flex;justify-content:space-between;gap:20px;cursor:pointer;color:var(--ink);font:1.2rem var(--serif)}.faq-a{display:none;color:var(--muted);font-size:.9rem;padding:0 40px 20px 0}.faq-item.open .faq-a{display:block}.faq-item.open .plus{transform:rotate(45deg)}.plus{font-size:1.4rem;transition:.2s}.contact{background:var(--beige)}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}.contact-card{background:var(--white);padding:34px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:.75rem;font-weight:700;color:var(--brown)}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#fffdfa;padding:13px;color:var(--ink);border-radius:2px;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--brown)}.field textarea{min-height:100px;resize:vertical}.form-note{font-size:.72rem;color:var(--muted);margin:14px 0}.success{display:none;padding:14px;background:#e7eee3;color:#35513a;font-size:.88rem;margin-top:14px}.footer{background:#2f251f;color:var(--beige);padding:55px 0 24px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:45px;padding-bottom:45px}.footer h3{font:1.5rem var(--serif);font-weight:400}.footer p,.footer a{color:#cfc1b4;font-size:.85rem}.footer-links{display:grid;gap:10px}.copyright{border-top:1px solid #66554a;padding-top:20px;font-size:.72rem;color:#aa998b;display:flex;justify-content:space-between}.wa{position:fixed;right:22px;bottom:22px;z-index:30;background:var(--brown);color:#fff;padding:14px 18px;border-radius:40px;box-shadow:0 8px 25px #0002;font-size:.8rem;font-weight:700}.wa:hover{background:var(--brown2)}.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:none}
+@media(max-width:850px){.wrap{width:min(100% - 36px,650px)}.section{padding:76px 0}.links{display:none;position:absolute;top:78px;left:0;right:0;background:var(--cream);padding:24px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.links.show{display:flex}.menu{display:block}.nav>.btn{display:none}.hero-grid{grid-template-columns:1fr;gap:35px;padding:65px 0}.hero-art{min-height:350px}.hero h1{font-size:clamp(3rem,12vw,5rem)}.pain-grid{grid-template-columns:1fr 1fr}.pillars{grid-template-columns:1fr;gap:22px}.service-feature{grid-template-columns:1fr;gap:0}.service-visual{min-height:260px}.service-copy{padding:28px 18px}.service-list{grid-template-columns:1fr 1fr}.differentials,.process,.faq{grid-template-columns:1fr;gap:40px}.diff-list{gap:20px}.project-grid{grid-template-columns:1fr 1fr}.project:first-child{grid-column:1/-1}.about-grid,.contact-grid{grid-template-columns:1fr;gap:35px}.about-visual{min-height:300px}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>div:first-child{grid-column:1/-1}}
+@media(max-width:540px){.wrap{width:calc(100% - 32px)}.section{padding:65px 0}.hero-grid{padding:55px 0}.hero-art{min-height:290px}.hero-art:before{width:280px;height:280px}.hero-art:after{width:210px;height:210px}.pain-grid,.service-list,.diff-list,.project-grid,.testimonial-grid{grid-template-columns:1fr}.project:first-child{grid-column:auto}.pain{min-height:auto}.project-img{height:230px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.contact-card{padding:22px}.footer-grid{grid-template-columns:1fr}.footer-grid>div:first-child{grid-column:auto}.copyright{display:block;line-height:2.1}.wa{right:12px;bottom:12px;padding:12px 15px}.actions .btn{width:100%}.section-head{margin-bottom:32px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{animation:none!important;transition:none!important}}
+
+/* === MEW / Pura-inspired art direction === */
+:root{--cream:#f5f0e7;--beige:#e9ddce;--brown:#34231d;--brown2:#71442f;--rust:#b95731;--ink:#171412;--muted:#756c64;--line:#d9cbbd;--white:#fffdf8}
+html{scroll-padding-top:86px}
+body{background:var(--cream);overflow-x:hidden}
+.topbar{display:none}
+.header{position:fixed;inset:0 0 auto;z-index:50;background:transparent!important;border:0!important;backdrop-filter:none!important;transition:background .35s,padding .35s}
+.header.scrolled{background:rgba(245,240,231,.86)!important;backdrop-filter:blur(16px)!important;border-bottom:1px solid rgba(52,35,29,.08)!important}
+.nav{height:92px}
+.brand img{width:112px;max-height:56px}
+.brandmark{font:2.1rem var(--serif);font-weight:700}
+.links{gap:32px;font-size:.86rem;color:var(--ink)}
+.links a{position:relative}
+.links a:after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:1px;background:var(--rust);transition:right .3s}
+.links a:hover:after{right:0}
+.nav>.btn{border-radius:99px;padding:14px 23px;box-shadow:0 12px 24px #24171030}
+.hero{min-height:760px;background:var(--cream);position:relative;isolation:isolate}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 75% 18%,#ead8c5 0,transparent 39%),radial-gradient(ellipse at 5% 90%,#eee3d5 0,transparent 34%);z-index:-2}
+.hero-grid{position:relative;min-height:760px;padding:150px 0 90px;grid-template-columns:.88fr 1.12fr;gap:0}
+.hero h1{font:clamp(3.8rem,7vw,6.7rem)/.94 var(--sans);font-weight:550;letter-spacing:-.075em;max-width:720px;margin:24px 0}
+.hero h1 em{font:italic 500 1.03em/.9 var(--serif);color:var(--rust);letter-spacing:-.065em}
+.hero p{font-size:1.1rem;line-height:1.55;max-width:510px;color:#6c625a}
+.hero .eyebrow{color:var(--rust);letter-spacing:.2em}
+.hero .micro{font-size:.78rem;letter-spacing:.015em}
+.hero-art{position:absolute;z-index:-1;right:-7%;top:55px;width:67%;height:640px;min-height:0;background:transparent!important;overflow:visible;pointer-events:none}
+.hero-ribbon{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 24px 24px #7b421f20);animation:ribbonDrift 13s ease-in-out infinite alternate;transform-origin:50% 50%}
+@keyframes ribbonDrift{0%{transform:translate3d(1%, -1%,0) rotate(-2deg) scale(1)}100%{transform:translate3d(-2%,2%,0) rotate(3deg) scale(1.04)}}
+.hero-orbit{position:absolute;border:1px solid #b9573140;border-radius:50%;animation:orbit 18s linear infinite}
+.orbit-a{width:410px;height:410px;right:9%;top:12%}.orbit-b{width:530px;height:530px;right:2%;top:3%;animation-direction:reverse}
+@keyframes orbit{to{transform:rotate(360deg)}}
+.hero-stamp{position:absolute;right:23%;top:31%;width:140px;height:140px;border-radius:50%;background:var(--rust);color:#fff6ed;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;box-shadow:0 20px 35px #5c2a1b35;animation:stampFloat 6s ease-in-out infinite}
+.hero-stamp span{font:2.6rem var(--serif);letter-spacing:-.1em}.hero-stamp small{font-size:.48rem;line-height:1.3;letter-spacing:.18em;text-align:center}
+@keyframes stampFloat{50%{transform:translateY(-14px) rotate(5deg)}}
+.hero-note{position:absolute;padding:13px 17px;background:#fffaf2;color:var(--brown);font:italic 1.05rem var(--serif);box-shadow:0 12px 30px #3c24151c;border:1px solid #dfcbbb}
+.note-one{right:3%;top:20%;transform:rotate(5deg);animation:noteFloat 7s ease-in-out infinite}.note-two{right:12%;bottom:9%;transform:rotate(-4deg);animation:noteFloat 8s ease-in-out infinite reverse}
+@keyframes noteFloat{50%{translate:0 -12px}}
+.btn{border-radius:999px;min-height:54px;padding:0 25px;box-shadow:0 12px 20px #26170f26;overflow:hidden;position:relative}
+.btn.secondary{box-shadow:none;border-radius:999px}
+.btn .button-track{display:block;position:relative;height:1.2em;line-height:1.2;overflow:hidden;min-width:0}.btn .button-track span{transition:transform .38s cubic-bezier(.2,.8,.2,1)}
+.btn .button-track span{display:block;white-space:nowrap}
+.btn:hover .button-track span{transform:translateY(-100%)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 16px 25px #26170f35}
+.ticker{background:var(--brown);padding:20px 0;overflow:hidden}
+.ticker div{width:max-content;min-width:200%;display:flex;animation:tickerMove 28s linear infinite;font-size:.9rem}
+@keyframes tickerMove{to{transform:translateX(-50%)}}
+.section{padding:118px 0}
+.section h2{font:clamp(2.8rem,5.6vw,5.1rem)/.98 var(--sans);font-weight:520;letter-spacing:-.075em}
+.section h2 em,.section h2 i{font-family:var(--serif);font-weight:400;color:var(--rust)}
+.section-head{max-width:820px}
+.section-head .eyebrow,.eyebrow{color:var(--rust)}
+.pain{border:0;border-top:1px solid var(--line);background:transparent;padding:25px 12px 26px 0;min-height:210px}
+.pain h3,.service h3{font:1.55rem/1.12 var(--serif);letter-spacing:-.02em}
+.num{font:1rem var(--sans);color:var(--rust);letter-spacing:.1em}
+.statement{background:var(--brown);position:relative;overflow:hidden}
+.statement:after{content:"";position:absolute;width:480px;height:480px;border:1px solid #c68c6b55;border-radius:50%;right:-120px;bottom:-250px;box-shadow:0 0 0 45px #c68c6b0c,0 0 0 90px #c68c6b0a}
+.statement h2{max-width:920px}.statement h2 em{color:#e5ad86}
+.pillars{gap:28px}.pillar{border-color:#a68a79}
+.services{background:#e9ddce}
+.service-feature{padding:0;background:transparent;gap:50px}
+.service-visual{min-height:440px;background:linear-gradient(135deg,#c8754d,#6c3927);overflow:hidden}
+.service-visual:before,.service-visual:after{border-radius:48% 52% 65% 35%;width:82%;height:74%;transform:rotate(-25deg);animation:shapeSway 12s ease-in-out infinite alternate}
+.service-visual:after{width:65%;height:58%;transform:rotate(24deg);animation-delay:-5s}
+@keyframes shapeSway{to{transform:rotate(25deg) translate(20px,-12px) scale(1.08)}}
+.service-visual span{font:italic clamp(2.5rem,5vw,5rem) var(--serif);text-shadow:0 5px 20px #381b1244}
+.service-copy{padding:35px 0}
+.service-copy h3{font:clamp(2.5rem,4vw,4rem)/1 var(--sans);letter-spacing:-.07em}
+.service-list{gap:0;border-top:1px solid #cbb9a8}
+.service{background:transparent;border:0;border-right:1px solid #cbb9a8;padding:30px 24px 25px 0;min-height:230px}
+.service:last-child{border-right:0}
+.differentials{gap:90px}
+.diff{border-color:var(--line)}
+.diff h3{font-size:1.55rem}
+.projects{background:#f1e9df}
+.project-grid{grid-template-columns:1fr 1fr;gap:22px}
+.project{background:transparent}
+.project:first-child{grid-column:auto}
+.project-img{height:390px;position:relative;overflow:hidden;font:italic 3rem var(--serif);background:linear-gradient(140deg,#c47a55,#563528)}
+.project:nth-child(2) .project-img{background:linear-gradient(140deg,#d8c5b2,#8a6b58)}
+.project:nth-child(3) .project-img{background:linear-gradient(140deg,#807b67,#c7b59f)}
+.project-img:after{content:"";position:absolute;width:75%;height:75%;border:1px solid #ffffff70;border-radius:45% 55% 38% 62%;transform:rotate(-25deg);animation:projectShape 14s ease-in-out infinite alternate}
+@keyframes projectShape{to{transform:rotate(25deg) scale(1.12)}}
+.project-meta{padding:20px 0}
+.process{gap:90px}
+.step{grid-template-columns:70px 1fr}
+.step strong{font:1.1rem var(--sans);color:var(--rust)}
+.about{background:#392820;overflow:hidden;position:relative}
+.about-visual{background:#e9ddce;overflow:hidden}
+.about-visual:before{color:var(--rust);animation:aboutPulse 8s ease-in-out infinite}
+@keyframes aboutPulse{50%{transform:scale(1.08) rotate(-4deg)}}
+.testimonials{background:#e9ddce}
+.testimonial{background:transparent;border:0;border-top:1px solid #c8b5a3;padding:28px 0}
+.faq-q{font:1.35rem var(--serif)}
+.contact{background:#d9b69b}
+.contact-card{box-shadow:0 25px 60px #51311d18}
+.contact h2 em{color:var(--brown2)}
+.footer{background:#251b17}
+.wa{border-radius:99px;box-shadow:0 12px 25px #20140e35}
+.reveal{opacity:0;transform:translateX(-34px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.visible{opacity:1;transform:translateX(0)}
+@media(max-width:850px){
+ .header{background:rgba(245,240,231,.82)!important;backdrop-filter:blur(12px)!important}
+ .nav{height:76px}.links{top:76px;background:var(--cream)}
+ .hero-grid{min-height:790px;padding:135px 0 55px;grid-template-columns:1fr}
+ .hero-art{right:-25%;top:250px;width:100%;height:480px;opacity:.72}
+ .hero h1{max-width:620px;font-size:clamp(3.5rem,11vw,5.5rem)}
+ .hero-grid>div:first-child{z-index:2}
+ .hero-stamp{width:100px;height:100px;right:25%;top:32%}.hero-stamp span{font-size:2rem}
+ .orbit-a{width:270px;height:270px}.orbit-b{width:360px;height:360px}
+ .section{padding:82px 0}.service-feature{grid-template-columns:1fr}.service-visual{min-height:300px}
+ .service-list{grid-template-columns:1fr 1fr}.service:nth-child(2){border-right:0}
+ .project-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:540px){
+ .hero-grid{min-height:780px;padding-top:125px}.hero h1{font-size:3.55rem}
+ .hero p{font-size:1rem}.hero-art{top:365px;right:-40%;width:130%;height:360px;opacity:.55}
+ .hero-note{font-size:.8rem;padding:9px 11px}.note-one{right:7%;top:20%}.note-two{right:17%;bottom:5%}
+ .hero-stamp{width:82px;height:82px;right:34%;top:37%}.hero-stamp span{font-size:1.7rem}
+ .section{padding:68px 0}.section h2{font-size:2.8rem}
+ .service-list,.project-grid{grid-template-columns:1fr}.service{border-right:0;border-bottom:1px solid #cbb9a8;padding:25px 0}
+ .project-img{height:270px}.pain-grid{grid-template-columns:1fr 1fr}
+ .nav>.btn{display:none}
+}
+
+
+/* Refinamentos finais de UX, acessibilidade e privacidade */
+.skip-link{position:fixed;top:-100px;left:16px;z-index:1000;background:#fff;color:#241913;padding:12px}.skip-link:focus{top:12px}
+.ticker-track{display:flex!important;align-items:center;min-width:max-content!important;width:max-content!important;animation:tickerMove 30s linear infinite!important;white-space:nowrap}
+.ticker-unit{display:inline-block!important;flex:none;padding:0 20px!important;color:#f0ddcb!important;letter-spacing:.16em}
+@keyframes tickerMove{to{transform:translateX(-50%)}}
+.privacy-link{background:none;border:0;color:#cfc1b4;text-decoration:underline;cursor:pointer;font-size:.72rem;padding:0}
+.consent-checkbox{display:flex;align-items:flex-start;gap:10px!important;font-weight:400!important;line-height:1.45;font-size:.82rem!important}.consent-checkbox input{width:18px;height:18px;flex:none;margin-top:2px;accent-color:#71442f}.consent-checkbox a{text-decoration:underline}
+.cookie-banner{position:fixed;z-index:100;bottom:16px;left:50%;transform:translateX(-50%);width:min(1100px,calc(100% - 32px));background:#fffaf2;color:#30241e;box-shadow:0 16px 55px #1b120d55;border:1px solid #d7c1ab;border-radius:12px;padding:22px 26px;display:flex;gap:24px;align-items:center;justify-content:space-between}
+.cookie-banner[hidden],.consent-dialog[hidden],.consent-backdrop[hidden]{display:none!important}
+.cookie-copy{max-width:590px}.cookie-copy strong{font-size:1rem}.cookie-copy p{font-size:.8rem;margin:5px 0 0;color:#67564c}.cookie-copy a{text-decoration:underline}.cookie-actions{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+.cookie-btn{background:#3c2a21;color:#fff9f3;border:1px solid #3c2a21;border-radius:100px;padding:11px 16px;cursor:pointer;font-size:.78rem;font-weight:650}.cookie-btn.outline{background:transparent;color:#3c2a21}.cookie-btn:hover{filter:brightness(1.13)}
+.consent-backdrop{position:fixed;inset:0;background:#1b100bc4;z-index:110}.consent-dialog{position:fixed;z-index:111;top:50%;left:50%;transform:translate(-50%,-50%);width:min(580px,calc(100% - 28px));max-height:90dvh;overflow:auto;background:#fffaf2;padding:32px;border-radius:12px;box-shadow:0 30px 90px #0006}.consent-dialog h2{font:2.1rem/1.1 Georgia,serif;margin:12px 0}.consent-dialog>p{font-size:.88rem;color:#68584d}.dialog-close{position:absolute;right:18px;top:12px;border:0;background:none;font-size:2rem;cursor:pointer;color:#3c2a21}
+.consent-option{border-top:1px solid #e2d4c6;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:15px 0}.consent-option strong{display:block;font-size:.9rem}.consent-option small{display:block;color:#75655b;font-size:.75rem}.consent-option input{width:20px;height:20px;accent-color:#71442f}.essential-label{font-size:.75rem;color:#6a584d}.consent-footnote{font-size:.75rem!important}.modal-open{overflow:hidden}
+#success{background:#f5e8d8;color:#49372f}
+@media(max-width:760px){.cookie-banner{flex-direction:column;align-items:stretch;padding:18px;gap:12px}.cookie-actions{justify-content:stretch}.cookie-actions .cookie-btn{flex:1}.consent-dialog{padding:24px}.hero-art{pointer-events:none}.nav .links.show{box-shadow:0 16px 30px #1c130e20}}
+@media(prefers-reduced-motion:reduce){.ticker-track,.hero-ribbon,.hero-stamp,.hero-orbit,.hero-note,.project-img:after,.about-visual:before,.service-visual:before,.service-visual:after{animation:none!important}.reveal{opacity:1!important;transform:none!important}.btn .button-track{transition:none!important}}
+
+
+/* Tipografia de títulos — atualização solicitada */
+@media (min-width: 769px) {
+  h1, .hero h1 { font-size: 58px !important; }
+  h2, .section h2 { font-size: 48px !important; }
+}
+h3, .pain h3, .service h3, .service-copy h3, .diff h3, .project-meta h3, .step h3, .about h3 { font-size: 20px !important; }
+h4 { font-size: 18px !important; }
+@media (max-width: 768px) {
+  h1, .hero h1 { font-size: clamp(36px, 8vw, 58px) !important; }
+  h2, .section h2 { font-size: clamp(30px, 6.5vw, 48px) !important; }
+}
+</style>
+<meta content="#f5f0e7" name="theme-color"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Fugaz+One&amp;family=Montserrat:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+/* Identidade tipográfica — atualização editorial */
+:root{--sans:'Montserrat',Arial,sans-serif;--serif:'Fugaz One',Impact,sans-serif;--display:'Fugaz One',Impact,sans-serif}
+html,body,body p,body li,body label,body input,body textarea,body select,body button,body a,body small,body blockquote{font-family:var(--sans)}
+body{font-weight:400}
+p,.lead,.micro,.faq-a,.project-meta p,.service p,.pain p,.diff p,.step p,.pillar p,.statement p,.about p,.testimonial small{font-weight:400}
+strong,b,.eyebrow,.text-link,.service a{font-weight:700}
+h1,h2,h3,h4,h5,h6,.section h2,.hero h1,.pain h3,.service h3,.service-copy h3,.diff h3,.project-meta h3,.step h3,.faq-q,.quote,.testimonial blockquote,.pillar b,.hero-art-inner strong,.service-visual span,.project-img,.about-visual:before{font-family:var(--display)!important;font-style:normal;letter-spacing:.005em;font-weight:400!important}
+.hero h1{font-size:48px!important;line-height:1.12!important;letter-spacing:.005em!important;font-weight:400!important}
+.hero h1 em,.section h2 em,h2 em{font-family:inherit!important;font-style:normal!important;font-weight:400!important}
+.section h2,section h2,.consent-dialog h2{font-size:40px!important;line-height:1.18!important;letter-spacing:.005em!important;font-weight:400!important}
+.hero .actions{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:stretch;max-width:620px}
+.hero .actions>.btn{width:100%;min-width:0;text-align:center;white-space:normal;line-height:1.3;min-height:58px;padding:12px 14px;font-family:var(--sans);font-weight:700}
+.hero .actions>.btn .button-track{max-width:100%;white-space:normal}
+@media(max-width:600px){.hero h1{font-size:clamp(32px,8vw,48px)!important}.section h2,section h2,.consent-dialog h2{font-size:clamp(30px,7vw,40px)!important}.hero .actions{gap:8px}.hero .actions>.btn{font-size:11px;padding:11px 7px;min-height:60px}}
+</style>
+<style>
+/* MEW / editorial redesign 2026 — inspired by layout principles, not copied assets */
+:root{--ink:#271b17;--brown:#3d2922;--brown2:#775441;--copper:#bd7951;--cream:#f4ede4;--beige:#e8d7c5;--line:#d8c8b8;--sans:'Montserrat',sans-serif;--display:'Fugaz One',sans-serif}
+html{scroll-padding-top:94px}body{background:var(--cream);color:var(--ink)}
+body p,body li{line-height:1.78}h1,h2,h3,h4,h5,h6{font-family:var(--display)!important;font-weight:400!important;letter-spacing:-.035em}h1{font-size:58px!important;line-height:1.08!important}h2{font-size:48px!important;line-height:1.13!important}h3{font-size:20px!important;line-height:1.3!important}h4{font-size:18px!important}
+.section{padding-top:116px;padding-bottom:116px}.wrap{max-width:1260px}.eyebrow{letter-spacing:.14em;text-transform:uppercase;font-size:11px;font-weight:700}.section-index{color:var(--copper);margin-right:10px}.section-head{max-width:890px;margin-bottom:52px}.section-head h2{max-width:800px}.lead{max-width:680px}
+.header{z-index:100}.header.scrolled{background:rgba(244,237,228,.91)!important}.header .wrap{max-width:1320px}
+.hero{min-height:810px;display:flex;align-items:center;padding-top:154px;padding-bottom:110px;overflow:hidden;background:radial-gradient(circle at 79% 45%,#ead0b9 0%,transparent 39%),var(--cream)}.hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);align-items:center;gap:25px}.hero h1{max-width:740px}.hero h1 em{color:#b16a44}.hero p{max-width:580px;font-size:16px}.hero-art{min-height:500px}.hero .actions{display:flex;flex-wrap:wrap;gap:12px}.hero .btn{white-space:nowrap}.hero .eyebrow{margin-bottom:24px}.hero .micro{margin-top:24px}
+.showcase-band{overflow:hidden;background:#2b1d18;color:#f4e9dc;padding:18px 0;border-top:1px solid #563b2e;border-bottom:1px solid #563b2e}.showcase-track{display:flex;width:max-content;animation:marqueeMew 32s linear infinite}.showcase-track>span{flex:none;white-space:nowrap;font-family:var(--display);font-size:18px;letter-spacing:.02em;padding-right:40px}.showcase-track i{color:#d49a71;font-style:normal;margin:0 20px}@keyframes marqueeMew{to{transform:translateX(-50%)}}
+/* Editorial contrast and asymmetric grid */
+.statement{background:#2b1d18;color:#f5e9da;position:relative;overflow:hidden}.statement:before{content:'✳';position:absolute;right:-65px;top:-135px;font-size:550px;line-height:1;color:rgba(190,128,87,.075);pointer-events:none}.statement h2{max-width:920px}.statement .eyebrow{color:#d8a27b}.statement p{color:#dcc8b7}.pillars{border-top:1px solid #715646;margin-top:60px}.pillar{border-color:#715646!important}.pillar b{color:#f6e9dd}
+.pain-grid{gap:10px}.pain{background:#e9dacb;border:1px solid #ddc9b7;border-radius:16px;padding:32px!important;min-height:240px}.pain .num{font-family:var(--display);font-size:25px;color:#b77753}.pain h3{margin-top:28px}
+.services{background:#f4ede4}.service-feature{background:#302019;color:#f6e9dc;border-radius:24px;padding:14px;display:grid;grid-template-columns:1fr 1fr;gap:32px;overflow:hidden}.service-feature .service-copy{padding:45px 42px 42px 10px}.service-feature .service-copy p,.service-feature .service-copy li{color:#dfd0c4}.service-feature .service-copy .eyebrow{color:#d69d75}.service-feature .service-copy h3{font-size:32px!important;line-height:1.2}.service-visual{min-height:570px;background:#b57b5c!important;border-radius:17px;overflow:hidden;display:flex;align-items:stretch;justify-content:stretch}.service-graphic{display:flex;flex-direction:column;justify-content:space-between;width:100%;padding:30px;background:radial-gradient(circle at 85% 16%,#e9b997,transparent 45%),linear-gradient(140deg,#bd825f,#70412f);color:#fff4e8}.sg-caption,.sg-foot{font:700 10px var(--sans);letter-spacing:.14em}.sg-main{font:400 clamp(34px,4.6vw,70px)/1.04 var(--display);letter-spacing:-.05em}.sg-main i{font-style:normal;color:#321e18}.sg-main span{display:inline-block;margin-left:15px}.sg-cards{display:grid;grid-template-columns:1fr 1fr;gap:10px}.sg-cards div{padding:20px;border:1px solid rgba(255,255,255,.5);border-radius:12px;font-size:11px;letter-spacing:.12em}.sg-cards b{font-family:var(--display);font-size:18px;letter-spacing:0}.service-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}.service-list .service{background:#e9dacb;border:1px solid #ddc9b7;border-radius:16px;padding:30px!important}.service-list .service h3{margin:25px 0 15px}.service-list .service a{margin-top:24px;display:inline-block}
+.projects{background:#2b1d18;color:#f5e9da}.projects .eyebrow,.projects .project-meta small{color:#d8a27b}.projects .lead,.projects .micro{color:#d8c7b9}.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 18px}.project:nth-child(3){grid-column:1/-1}.project:nth-child(3) .project-img{min-height:440px}.project{min-width:0}.project-img{position:relative;display:flex;align-items:center;justify-content:center;min-height:400px;border-radius:18px;overflow:hidden;padding:26px}.project-meta{padding:20px 6px}.project-meta h3{font-size:24px!important;margin:12px 0}.project-meta p{color:#d8c7b9}.project-meta .text-link{color:#f4c7a9}.concept-tag{position:absolute;z-index:3;top:19px;left:22px;font:700 9px var(--sans);letter-spacing:.1em;color:inherit}.concept-1{background:#ba7959;color:#fff5ea}.social-mock{background:#f8efe5;color:#39251b;width:min(68%,320px);min-height:305px;border-radius:13px;box-shadow:24px 26px 0 rgba(54,26,17,.23),0 24px 80px #3b1d1660;transform:rotate(-7deg);padding:18px;display:flex;flex-direction:column;justify-content:space-between}.social-top,.social-bottom{display:flex;justify-content:space-between;font-size:12px;font-weight:700}.social-center small{display:block;font-size:9px;letter-spacing:.16em}.social-center strong{font:400 clamp(30px,4vw,56px)/.96 var(--display);display:block;margin:15px 0}.social-center span{font-size:8px;letter-spacing:.1em}.concept-2{background:#dbc5ac;color:#493024}.brand-mock{width:80%;height:300px;background:#3c2921;color:#f5e7d8;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative;transform:rotate(4deg);box-shadow:18px 24px 0 #ae8d70}.brand-circle{width:190px;height:190px;border:1px solid #c79a77;border-radius:50%;position:absolute;top:30px;right:10%;opacity:.7}.brand-mark{font:400 125px/1 var(--display);letter-spacing:-.1em;z-index:1}.brand-mark span{color:#cb8b60}.brand-line{font:700 9px var(--sans);letter-spacing:.2em;z-index:1}.brand-swatches{display:flex;gap:5px;position:absolute;bottom:20px;right:20px}.brand-swatches b{width:21px;height:21px;background:#c58c65;border-radius:50%}.brand-swatches b:nth-child(2){background:#e7d4bd}.brand-swatches b:nth-child(3){background:#72513d}.concept-3{background:linear-gradient(125deg,#ae7455,#d4ad8c);color:#fff5ea}.web-mock{width:min(85%,680px);min-height:340px;background:#f4eee6;border-radius:12px;color:#34231d;transform:perspective(800px) rotateY(-8deg) rotateX(4deg);box-shadow:26px 30px 0 #71412e,0 35px 80px #49281b60;display:flex;flex-direction:column}.web-top,.web-bottom{display:flex;justify-content:space-between;padding:14px 22px;font-size:11px;border-bottom:1px solid #d7c4b4}.web-body{padding:35px;flex:1}.web-body small{font-size:10px;letter-spacing:.15em}.web-body strong{display:block;font:400 clamp(28px,4vw,55px)/1.1 var(--display);margin:20px 0}.web-body i{color:#b77854;font-style:normal}.web-pill{display:inline-block;background:#34231d;color:white;padding:11px 16px;border-radius:30px;font-size:10px}.web-bottom{border-top:1px solid #d7c4b4;border-bottom:0}
+.differentials{gap:70px}.diff-list .diff{border-bottom:1px solid #cbb6a5;padding:24px 0}.diff h3{font-size:22px!important}
+.about{background:#cdb095;color:#291c17}.about-grid{gap:70px}.about-visual{min-height:540px;background:radial-gradient(circle at 50% 45%,#bf8a67,transparent 65%),#493127;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;border-radius:18px}.about-monogram{font:400 clamp(85px,12vw,190px)/1 var(--display);letter-spacing:-.13em;color:#f2e3d3;transform:rotate(-10deg)}.about-monogram span{color:#d49b70}.about-strap{font-size:9px;color:#e8d2c1;letter-spacing:.18em}.about h2{max-width:680px}
+.philosophy{background:#e5d3bf}.philosophy-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:70px;align-items:center}.philosophy h2 em{font-style:normal;color:#b06f4c}.philosophy-tiles{display:grid;gap:10px}.philosophy-tile{border-radius:13px;background:#f2e7da;padding:24px;display:grid;grid-template-columns:60px 1fr;align-items:start}.philosophy-tile span{font:400 23px var(--display);color:#b47755;grid-row:span 2}.philosophy-tile h3{margin:0}.philosophy-tile p{margin:6px 0 0}
+.contact{background:#2b1d18;color:#f5e9da}.contact .lead,.contact p{color:#dfd0c4}.contact .eyebrow{color:#d8a27b}.contact-card{background:#f4ede4;color:#2b1d18;border-radius:20px}.contact-card p{color:#493a30}.contact .text-link{color:#eab992}.contact-card h3{font-size:25px!important}
+footer{background:#1e1512!important;color:#e9d8c8}
+@media(max-width:1050px){.hero-grid{grid-template-columns:1fr 0.65fr}.hero-art{min-height:400px}.service-feature{gap:15px}.service-feature .service-copy{padding:30px 20px}.service-list{grid-template-columns:1fr 1fr}.service-list .service:last-child{grid-column:1/-1}.philosophy-grid{gap:35px}}
+@media(max-width:760px){h1{font-size:clamp(37px,9vw,48px)!important}h2{font-size:clamp(30px,7.4vw,40px)!important}.section{padding-top:76px;padding-bottom:76px}.hero{min-height:auto;padding-top:135px;padding-bottom:70px}.hero-grid{grid-template-columns:1fr}.hero-art{min-height:260px;max-height:340px;opacity:.8}.hero .actions{flex-direction:row;align-items:stretch}.hero .actions .btn{white-space:normal;flex:1 1 180px}.pain-grid{grid-template-columns:1fr 1fr}.pain{min-height:0;padding:23px!important}.service-feature{grid-template-columns:1fr}.service-visual{min-height:340px}.service-feature .service-copy{padding:25px 16px 35px}.service-list{grid-template-columns:1fr}.service-list .service:last-child{grid-column:auto}.project-grid{grid-template-columns:1fr}.project:nth-child(3){grid-column:auto}.project-img,.project:nth-child(3) .project-img{min-height:330px}.philosophy-grid{grid-template-columns:1fr}.about-visual{min-height:320px}.showcase-track>span{font-size:14px}}
+@media(max-width:480px){.pain-grid{grid-template-columns:1fr}.hero .actions .btn{flex:1 1 100%}.social-mock{width:75%;min-height:265px}.brand-mock{height:250px}.web-mock{width:95%;min-height:260px}.web-body{padding:22px}.concept-tag{font-size:8px}.service-feature .service-copy h3{font-size:26px!important}}
+@media(prefers-reduced-motion:reduce){.showcase-track{animation:none!important}}
+
+
+/* Mew slide-tabs: adaptação acessível do cursor deslizante da referência React */
+.header .nav{gap:20px}
+.header .slide-tabs{position:relative;display:flex;align-items:center;gap:2px;padding:5px;border:1px solid rgba(73,55,47,.22);border-radius:999px;background:rgba(255,250,243,.83);box-shadow:0 8px 28px rgba(52,35,29,.08);isolation:isolate;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.header .slide-tabs>a{position:relative;z-index:1;display:inline-flex;align-items:center;justify-content:center;min-height:41px;padding:9px 16px;border-radius:999px;color:#49372f;font-family:Montserrat,Arial,sans-serif;font-size:12px;font-weight:600;letter-spacing:.01em;white-space:nowrap;transition:color .24s ease}
+.header .slide-tabs>a::after{display:none!important}
+.header .slide-tabs>a:is(:hover,:focus-visible),.header .slide-tabs>a.is-active{color:#fff8ef}
+.header .slide-tabs>a:focus-visible{outline:2px solid #bd7953;outline-offset:3px}
+.header .slide-tabs-cursor{position:absolute;top:5px;left:0;height:41px;width:0;opacity:0;border-radius:999px;background:linear-gradient(110deg,#704735,#422a22);box-shadow:0 3px 12px rgba(52,35,29,.2);pointer-events:none;z-index:0;transition:transform .35s cubic-bezier(.22,1,.36,1),width .35s cubic-bezier(.22,1,.36,1),opacity .2s ease}
+.header .slide-tabs:focus-within .slide-tabs-cursor{opacity:1}
+.form-intro{margin:0 0 20px;color:var(--muted);max-width:540px}
+#leadForm .form-grid{gap:16px}
+#leadForm .field>label:not(.consent-checkbox){font-weight:600}
+#leadForm input:not([type=checkbox]),#leadForm select{min-height:50px}
+@media(max-width:1050px) and (min-width:851px){.header .slide-tabs>a{padding-inline:10px;font-size:11px}.header .nav{gap:10px}.header .nav>.btn{padding-inline:14px}}
+@media(max-width:850px){
+ .header .slide-tabs{display:none;position:absolute;top:76px;left:18px;right:18px;width:auto;flex-direction:column;align-items:stretch;padding:12px;gap:3px;border-radius:20px;background:#f7f0e6;box-shadow:0 18px 35px #2c1b1629}
+ .header .slide-tabs.show{display:flex}
+ .header .slide-tabs>a{width:100%;justify-content:flex-start;min-height:44px;padding:12px 16px;font-size:14px}
+ .header .slide-tabs-cursor{display:none}
+ .header .slide-tabs>a:is(:hover,:focus-visible),.header .slide-tabs>a.is-active{background:#49372f;color:#fff8ef}
+}
+@media(prefers-reduced-motion:reduce){.header .slide-tabs-cursor,.header .slide-tabs>a{transition:none!important}}
+
+</style><style>
+/* MEW — Illuminated Hero: isolated visual variant, preserving the rest of the site */
+.mew-illuminated-hero{background:#170f0d!important;color:#fff6ef!important;min-height:730px;min-height:min(850px,100svh);display:flex;align-items:center;justify-content:center;isolation:isolate;overflow:hidden;position:relative}
+.mew-illuminated-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 65% 50% at 50% -10%,rgba(167,85,43,.25),transparent 80%),linear-gradient(180deg,#1d120f,#140d0c);z-index:-4}
+.mew-glow-top,.mew-glow-bottom{position:absolute;pointer-events:none;z-index:-2;width:min(100vw,850px);aspect-ratio:1;border-radius:50%;left:50%;filter:blur(48px);transform:translateX(-50%);opacity:.65}
+.mew-glow-top{top:-87%;background:radial-gradient(circle,rgba(239,184,126,.55) 0%,rgba(179,91,45,.36) 34%,transparent 69%);animation:mewGlowTop 2s ease-out both}
+.mew-glow-bottom{bottom:-98%;background:radial-gradient(circle,rgba(174,85,48,.32),transparent 68%);animation:mewGlowBottom 2s ease-out both}
+.mew-glow-grain{position:absolute;inset:0;opacity:.18;pointer-events:none;z-index:-1;background-image:radial-gradient(#e8b990 0.65px,transparent 0.65px);background-size:21px 21px;mask-image:linear-gradient(180deg,#000,transparent 80%)}
+.mew-glow-content{position:relative;text-align:center;display:flex;flex-direction:column;align-items:center;padding:148px 0 115px;z-index:2}
+.mew-illuminated-hero .mew-glow-kicker{color:#d7a783;letter-spacing:.22em;font-size:.73rem;margin-bottom:29px}
+.mew-illuminated-hero h1{font-family:'Fugaz One',sans-serif!important;font-size:58px!important;font-weight:400!important;line-height:1.12!important;letter-spacing:-.025em!important;color:#fff9f3!important;max-width:980px!important;margin:0 auto 24px!important}
+.mew-glow-highlight{display:inline-block;position:relative;color:#ffe8c9;filter:url(#mew-glow-filter);animation:mewGlowReveal 1.4s ease-out .15s both}
+.mew-illuminated-hero p{color:#d9c8bd!important;font-family:'Montserrat',sans-serif;line-height:1.75;max-width:630px;font-size:1.02rem!important;margin:0 auto 30px!important}
+.mew-glow-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+.mew-illuminated-hero .btn{background:#d6a47d;color:#251711;border-color:#d6a47d;border-radius:999px}
+.mew-illuminated-hero .btn.secondary{background:transparent;color:#f7e7d9;border-color:#8f6c57}
+.mew-illuminated-hero .btn:hover{background:#e8ba94;color:#251711}
+.mew-illuminated-hero .btn.secondary:hover{background:#493126;color:#fff}
+.mew-glow-footnote{font:600 .65rem 'Montserrat',sans-serif;letter-spacing:.19em;color:#9c8070;margin-top:70px}
+.mew-glow-footnote span{padding:0 12px;color:#c28b62}
+.mew-glow-filters{position:absolute;pointer-events:none}
+@keyframes mewGlowReveal{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes mewGlowTop{from{opacity:.2;translate:0 -5%}to{opacity:.65;translate:0 5%}}
+@keyframes mewGlowBottom{from{opacity:.1;translate:0 6%}to{opacity:.65;translate:0 -3%}}
+@media(max-width:700px){.mew-illuminated-hero{min-height:690px}.mew-glow-content{padding:125px 0 90px}.mew-illuminated-hero h1{font-size:clamp(36px,8vw,52px)!important}.mew-illuminated-hero p{font-size:.94rem!important}.mew-glow-actions{width:100%}.mew-glow-actions .btn{width:auto!important;min-width:0;flex:1 1 190px}.mew-glow-footnote{font-size:.55rem;line-height:1.8;letter-spacing:.1em}}
+@media(max-width:430px){.mew-glow-actions{flex-direction:column;align-items:stretch}.mew-glow-actions .btn{flex:auto;width:100%!important}.mew-glow-footnote{margin-top:48px}}
+@media(prefers-reduced-motion:reduce){.mew-glow-top,.mew-glow-bottom,.mew-glow-highlight{animation:none!important}}
+</style><link href="mew-cursor.css" rel="stylesheet"/><style>
+/* MEW refinement v2: contrast, rhythm and brand hierarchy */
+.header{background:transparent!important;border-bottom:1px solid transparent!important;transition:background .35s,border-color .35s,backdrop-filter .35s!important}
+.header.scrolled{background:rgba(30,19,15,.93)!important;border-bottom:1px solid rgba(201,151,114,.17)!important;backdrop-filter:blur(18px)!important;-webkit-backdrop-filter:blur(18px)!important}
+.header .nav{height:86px}
+.header .brand{position:relative;z-index:2}
+.header .brand img{width:120px;max-height:67px;object-fit:contain;filter:drop-shadow(0 1px 5px rgba(0,0,0,.18))}
+.header .slide-tabs{background:rgba(56,39,31,.92)!important;border:1px solid rgba(201,151,114,.3)!important;box-shadow:0 10px 25px rgba(0,0,0,.13)!important}
+.header .slide-tabs>a{color:#f2e7dd!important}
+.header .slide-tabs>a:is(:hover,:focus-visible),.header .slide-tabs>a.is-active{color:#241712!important}
+.header .slide-tabs-cursor{background:#c99772!important;box-shadow:0 3px 12px rgba(0,0,0,.15)!important}
+.header .nav>.btn{background:#c99772!important;border-color:#c99772!important;color:#241712!important;border-radius:999px!important;font-weight:700}
+.header .nav>.btn:hover{background:#e0ad88!important;transform:translateY(-2px)}
+.header .menu{color:#f2e7dd!important}
+.mew-illuminated-hero{min-height:100svh!important;background:#1c120f!important}
+.mew-illuminated-hero::before{background:radial-gradient(ellipse 70% 52% at 50% -8%,rgba(170,91,48,.22),transparent 77%),linear-gradient(180deg,#24150f 0%,#1c120f 66%,#190f0d 100%)!important}
+.mew-glow-content{padding:125px 0 86px!important;transform:translateY(-14px)}
+.mew-illuminated-hero .mew-glow-kicker{margin-bottom:25px!important;color:#dba985!important}
+.mew-illuminated-hero h1{margin-bottom:29px!important;line-height:1.13!important}
+.mew-glow-highlight{filter:drop-shadow(0 0 9px rgba(237,156,92,.52)) drop-shadow(0 0 19px rgba(182,85,38,.22))!important;color:#ffdfbc!important}
+.mew-illuminated-hero p{max-width:610px!important;color:#e0d0c5!important;line-height:1.7!important;margin-bottom:32px!important}
+.mew-glow-actions{gap:14px!important}
+.mew-illuminated-hero .btn{min-height:54px;border-radius:999px!important;padding:14px 23px!important;transition:background .25s,border-color .25s,transform .25s!important}
+.mew-illuminated-hero .btn.secondary{border-color:#b28a73!important;color:#f7e8de!important}
+.mew-illuminated-hero .btn.secondary:hover{border-color:#d6a47d!important}
+.mew-glow-footnote{margin-top:48px!important}
+.wa{right:26px!important;bottom:25px!important;background:#38271f!important;color:#f8ede3!important;border:1px solid rgba(201,151,114,.45)!important;box-shadow:0 7px 22px rgba(0,0,0,.22)!important;opacity:.88;font-size:.76rem!important;padding:12px 16px!important;transition:opacity .25s,transform .25s!important}
+.wa:hover,.wa:focus-visible{opacity:1;transform:translateY(-3px)}
+@media(min-width:1100px){.mew-glow-content{transform:translateY(-24px)}}
+@media(max-width:850px){
+.header .nav{height:74px!important}
+.header .slide-tabs{background:#38271f!important;border-color:#765443!important}
+.header .slide-tabs>a{color:#f2e7dd!important}
+.header .slide-tabs>a:is(:hover,:focus-visible),.header .slide-tabs>a.is-active{background:#c99772!important;color:#241712!important}
+.mew-glow-content{padding:135px 0 85px!important;transform:none!important}
+.header .brand img{width:100px}
+}
+@media(max-width:600px){
+.mew-illuminated-hero{min-height:100svh!important}
+.mew-glow-content{padding:118px 0 84px!important}
+.mew-illuminated-hero h1{font-size:clamp(36px,9vw,48px)!important}
+.mew-glow-footnote{margin-top:37px!important}
+.wa{right:14px!important;bottom:15px!important;padding:10px 13px!important;font-size:.72rem!important}
+}
+@media(prefers-reduced-motion:reduce){.mew-glow-highlight{animation:none!important}}
+</style></head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<div class="topbar">ESTRATÉGIA · CRIATIVIDADE · IDENTIDADE</div>
+<header class="header"><div class="wrap nav">
+<a aria-label="Mew, início" class="brand" href="#inicio"><img alt="Mew Marketing Digital" src="logo-bege.png"/></a>
+<nav aria-label="Navegação principal" class="links slide-tabs" id="navlinks"><span aria-hidden="true" class="slide-tabs-cursor"></span><a href="#solucoes">Soluções</a><a href="#projetos">Projetos</a><a href="#processo">Processo</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
+<a class="btn" href="#contato">Vamos conversar <span>↗</span></a>
+<button aria-expanded="false" aria-label="Abrir menu" class="menu" id="menu">☰</button>
+</div></header>
+<main id="conteudo">
+<section class="hero mew-illuminated-hero" id="inicio">
+<div aria-hidden="true" class="mew-glow-top"></div>
+<div aria-hidden="true" class="mew-glow-bottom"></div>
+<div aria-hidden="true" class="mew-glow-grain"></div>
+<div class="wrap mew-glow-content">
+<div class="eyebrow mew-glow-kicker">MEW / MARKETING COM IDENTIDADE</div>
+<h1>Sua marca merece<br/><span class="mew-glow-highlight">ser lembrada.</span></h1>
+<p>Estratégia, criatividade e tecnologia para construir uma presença digital que traduz quem sua empresa é — e aonde ela quer chegar.</p>
+<div class="actions mew-glow-actions">
+<a class="btn" href="#contato">Quero fortalecer minha marca <span aria-hidden="true">↗</span></a>
+<a class="btn secondary" href="#projetos">Conhecer projetos</a>
+</div>
+<div class="mew-glow-footnote">PRESENÇA COM PROPÓSITO <span aria-hidden="true">✳</span> CRIATIVIDADE COM DIREÇÃO</div>
+</div>
+<svg aria-hidden="true" class="mew-glow-filters" height="0" width="0" xmlns="http://www.w3.org/2000/svg"><defs>
+<filter color-interpolation-filters="sRGB" height="400%" id="mew-glow-filter" width="200%" x="-50%" y="-150%">
+<fegaussianblur in="SourceGraphic" result="blurA" stddeviation="5"></fegaussianblur>
+<fegaussianblur in="SourceGraphic" result="blurB" stddeviation="16"></fegaussianblur>
+<fegaussianblur in="SourceGraphic" result="blurC" stddeviation="28"></fegaussianblur>
+<fecolormatrix in="blurA" result="a" type="matrix" values="1 0 0 0 0 0 .76 0 0 0 0 0 .48 0 0 0 0 0 .8 0"></fecolormatrix>
+<fecolormatrix in="blurB" result="b" type="matrix" values=".77 0 0 0 0 0 .36 0 0 0 0 0 .19 0 0 0 0 0 .85 0"></fecolormatrix>
+<fecolormatrix in="blurC" result="c" type="matrix" values=".55 0 0 0 0 0 .20 0 0 0 0 0 .12 0 0 0 0 0 .7 0"></fecolormatrix>
+<femerge><femergenode in="c"></femergenode><femergenode in="b"></femergenode><femergenode in="a"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge>
+</filter></defs></svg>
+</section><div aria-label="Competências da Mew" class="showcase-band"><div aria-hidden="true" class="showcase-track"><span>ESTRATÉGIA <i>✳</i> IDENTIDADE <i>✳</i> SOCIAL MEDIA <i>✳</i> DESIGN <i>✳</i> WEB <i>✳</i> CRIATIVIDADE <i>✳</i></span><span>ESTRATÉGIA <i>✳</i> IDENTIDADE <i>✳</i> SOCIAL MEDIA <i>✳</i> DESIGN <i>✳</i> WEB <i>✳</i> CRIATIVIDADE <i>✳</i></span></div></div>
+<div aria-label="Estratégia, identidade, criatividade e tecnologia" class="ticker"><div class="ticker-track"><span class="ticker-unit">ESTRATÉGIA ✳ IDENTIDADE ✳ CRIATIVIDADE ✳ TECNOLOGIA ✳ MARKETING COM IDENTIDADE ✳ </span><span aria-hidden="true" class="ticker-unit">ESTRATÉGIA ✳ IDENTIDADE ✳ CRIATIVIDADE ✳ TECNOLOGIA ✳ MARKETING COM IDENTIDADE ✳ </span></div></div>
+<section class="section"><div class="wrap"><div class="section-head reveal"><div class="eyebrow"><span class="section-index">01 / </span>O próximo passo da sua marca</div><h2>Sua empresa evoluiu. Sua presença digital acompanhou?</h2><p class="lead">Uma boa empresa nem sempre é percebida como merece. Quando a comunicação não acompanha a qualidade do negócio, oportunidades podem passar despercebidas.</p></div>
+<div class="pain-grid"><article class="pain reveal"><div class="num">01</div><h3>Sua comunicação não transmite seu valor</h3><p>Sua empresa entrega qualidade, mas sua presença digital ainda não demonstra isso com clareza.</p></article><article class="pain reveal"><div class="num">02</div><h3>Você publica, mas não vê evolução</h3><p>Existe produção de conteúdo, mas falta planejamento e conexão com os objetivos do negócio.</p></article><article class="pain reveal"><div class="num">03</div><h3>Sua marca não se diferencia</h3><p>Sua comunicação parece com a de tantas outras empresas e não expressa o que torna seu negócio único.</p></article><article class="pain reveal"><div class="num">04</div><h3>Falta estratégia para crescer</h3><p>As ações acontecem de forma isolada, sem uma visão integrada de posicionamento e comunicação.</p></article></div>
+</div></section>
+<section class="section statement"><div class="wrap"><div class="eyebrow reveal"><span class="section-index">02 / </span>A abordagem Mew</div><h2 class="reveal">Não fazemos marketing por fazer. Construímos marcas com intenção.</h2><p class="reveal">Cada projeto começa com uma pergunta: onde sua marca quer chegar? A partir disso, conectamos estratégia, comunicação e criatividade para desenvolver soluções que façam sentido para o momento e os objetivos da sua empresa.</p>
+<div class="pillars"><div class="pillar reveal"><b>01 / Estratégia antes da execução</b><p>Entendemos o negócio, o público e os objetivos para definir caminhos claros e ações coerentes.</p></div><div class="pillar reveal"><b>02 / Criatividade com identidade</b><p>Desenvolvemos uma comunicação que expressa a personalidade e os diferenciais da marca.</p></div><div class="pillar reveal"><b>03 / Experiências que conectam</b><p>Integramos canais, conteúdos e plataformas para criar uma presença digital consistente.</p></div></div></div></section>
+<section class="section services" id="solucoes"><div class="wrap"><div class="section-head reveal"><div class="eyebrow"><span class="section-index">03 / </span>Como podemos ajudar</div><h2>Soluções pensadas para a próxima fase da sua marca.</h2><p class="lead">Do posicionamento à presença digital, conectamos diferentes frentes do marketing para construir uma marca mais forte, profissional e preparada para crescer.</p></div>
+<div class="service-feature reveal"><div class="service-visual"><div class="service-graphic"><div class="sg-caption">01 — MARKETING &amp; SOCIAL</div><div class="sg-main">IDEIAS<br/><i>EM MOVIMENTO</i><span>↗</span></div><div class="sg-cards"><div>ESTRATÉGIA<br/><b>com direção.</b></div><div>CONTEÚDO<br/><b>com identidade.</b></div></div><div class="sg-foot">MEW / CREATIVE DIRECTION</div></div></div><div class="service-copy"><div class="eyebrow">Nossa principal frente</div><h3>Sua marca presente. Sua comunicação com propósito.</h3><p>Transformamos suas redes sociais em canais estratégicos de comunicação e relacionamento. Planejamos conteúdos, construímos narrativas e desenvolvemos uma presença digital alinhada à identidade e aos objetivos da sua empresa.</p><ul><li>Planejamento estratégico de conteúdo</li><li>Gestão de redes sociais</li><li>Direção criativa e peças digitais</li><li>Planejamento de campanhas</li><li>Análise de desempenho e otimização</li></ul><a class="btn" href="#contato">Quero fortalecer minhas redes sociais ↗</a></div></div>
+<div class="service-list"><article class="service reveal"><div class="eyebrow">02 / Branding</div><h3>Uma marca que comunica antes mesmo de falar.</h3><p>Identidades que traduzem posicionamento, personalidade e diferenciais da sua empresa.</p><a href="#contato">Quero construir minha identidade ↗</a></article><article class="service reveal"><div class="eyebrow">03 / Websites</div><h3>Seu site também precisa trabalhar pelo seu negócio.</h3><p>Experiências digitais que unem design, usabilidade e estratégia para conduzir visitantes à ação.</p><a href="#contato">Quero criar meu site ↗</a></article><article class="service reveal"><div class="eyebrow">04 / Design</div><h3>Ideias bem construídas merecem uma boa apresentação.</h3><p>Materiais visuais e campanhas que mantêm a comunicação coerente em cada ponto de contato.</p><a href="#contato">Quero desenvolver meu projeto ↗</a></article></div>
+</div></section>
+<section class="section"><div class="wrap differentials"><div class="reveal"><div class="eyebrow"><span class="section-index">04 / </span>Por que Mew?</div><h2>Mais do que executar tarefas. Pensamos junto com a sua marca.</h2><p class="lead">Um bom trabalho começa muito antes da primeira publicação. É preciso entender o contexto, reconhecer oportunidades e construir uma comunicação coerente em cada detalhe.</p><div class="quote">“Sofisticação está nos detalhes. Estratégia está nas escolhas. Identidade está em tudo.”</div></div><div class="diff-list"><article class="diff reveal"><h3>Cada marca é única</h3><p>Soluções pensadas a partir da realidade, dos objetivos e da personalidade de cada empresa.</p></article><article class="diff reveal"><h3>Estratégia e criatividade</h3><p>Planejamento e execução criativa para que cada entrega tenha intenção e mensagem clara.</p></article><article class="diff reveal"><h3>Visão do todo</h3><p>Consideramos como cada ponto de contato contribui para a percepção da marca.</p></article><article class="diff reveal"><h3>Proximidade real</h3><p>Uma relação transparente, colaborativa e próxima em todas as etapas do projeto.</p></article></div></div></section>
+<section class="section projects" id="projetos"><div class="wrap"><div class="section-head reveal"><div class="eyebrow"><span class="section-index">05 / </span>Projetos selecionados</div><h2>Boas ideias ganham força quando saem do papel.</h2><p class="lead">Cada projeto é uma oportunidade de transformar desafios em soluções por meio de estratégia, design e comunicação.</p></div><div class="project-grid">
+<article class="project reveal"><div aria-label="Composição gráfica conceitual criada para ilustrar os serviços da Mew" class="project-img concept-art concept-1" role="img"><div class="concept-tag">DIREÇÃO CRIATIVA / CONCEITO VISUAL</div><div class="social-mock"><div class="social-top">mew <span>•••</span></div><div class="social-center"><small>CONTEÚDO COM INTENÇÃO</small><strong>MARCA<br/>QUE MARCA.</strong><span>IDENTIDADE EM CADA DETALHE ↗</span></div><div class="social-bottom"><span>♡ ◇ ↗</span><span>01 / 03</span></div></div></div><div class="project-meta"><small>MARKETING E REDES SOCIAIS</small><h3>Conteúdo com identidade</h3><p>Exploração visual de uma comunicação social consistente e autoral.</p><a class="text-link" href="#contato">Conversar sobre um projeto ↗</a></div></article>
+<article class="project reveal"><div aria-label="Composição gráfica conceitual criada para ilustrar os serviços da Mew" class="project-img concept-art concept-2" role="img"><div class="concept-tag">IDENTIDADE / ESTUDO DE COMPOSIÇÃO</div><div class="brand-mock"><span class="brand-circle"></span><div class="brand-mark">m<span>.</span></div><div class="brand-line">ESTRATÉGIA <i>×</i> IDENTIDADE</div><div class="brand-swatches"><b></b><b></b><b></b></div></div></div><div class="project-meta"><small>BRANDING E IDENTIDADE VISUAL</small><h3>Identidade que comunica</h3><p>Estudo de linguagem gráfica, contraste e personalidade de marca.</p><a class="text-link" href="#contato">Conversar sobre um projeto ↗</a></div></article>
+<article class="project reveal"><div aria-label="Composição gráfica conceitual criada para ilustrar os serviços da Mew" class="project-img concept-art concept-3" role="img"><div class="concept-tag">WEB DESIGN / ESTUDO DE INTERFACE</div><div class="web-mock"><div class="web-top"><span>◉</span><span>○ ○ ○</span></div><div class="web-body"><small>IDEIAS QUE GANHAM FORMA</small><strong>Design que<br/><i>faz sentido.</i></strong><span class="web-pill">Explorar conceito ↗</span></div><div class="web-bottom"><span>01</span><span>ESTRATÉGIA &amp; DESIGN</span></div></div></div><div class="project-meta"><small>WEBSITE E EXPERIÊNCIA DIGITAL</small><h3>Experiências digitais</h3><p>Estudo de interface que combina clareza, estética e navegação.</p><a class="text-link" href="#contato">Conversar sobre um projeto ↗</a></div></article>
+</div><p class="micro">Estudos visuais conceituais para demonstrar nossa direção criativa. Não representam clientes, trabalhos contratados ou resultados reais.</p></div></section>
+<section class="section" id="processo"><div class="wrap process"><div class="reveal"><div class="eyebrow"><span class="section-index">06 / </span>Nosso processo</div><h2>Um processo claro. Uma construção em conjunto.</h2><p class="lead">Cada projeto tem suas particularidades, mas seguimos uma jornada que mantém estratégia, organização e transparência do início à entrega.</p><a class="btn secondary" href="#contato">Vamos começar? ↗</a></div><div class="steps"><div class="step reveal"><strong>01</strong><div><h3>Conversa e diagnóstico</h3><p>Entendemos sua empresa, seu momento, seus desafios e onde deseja chegar.</p></div></div><div class="step reveal"><strong>02</strong><div><h3>Estratégia e planejamento</h3><p>Definimos prioridades, objetivos e o caminho mais adequado para o projeto.</p></div></div><div class="step reveal"><strong>03</strong><div><h3>Criação e desenvolvimento</h3><p>Transformamos o planejamento em soluções concretas, conectando conceito, design e execução.</p></div></div><div class="step reveal"><strong>04</strong><div><h3>Apresentação e alinhamento</h3><p>Apresentamos as entregas, coletamos feedbacks e realizamos os ajustes previstos.</p></div></div><div class="step reveal"><strong>05</strong><div><h3>Entrega e evolução</h3><p>Finalizamos o projeto e alinhamos os próximos passos para evoluir a presença da marca.</p></div></div></div></div></section>
+<section class="section about" id="sobre"><div class="wrap about-grid"><div class="about-visual reveal"><div class="about-monogram">m<span>e</span>w.</div><div class="about-strap">ESTRATÉGIA × DESIGN × IDENTIDADE</div></div><div class="reveal"><div class="eyebrow"><span class="section-index">07 / </span>Sobre a Mew</div><h2>Por trás de cada marca, existem pessoas. E é por elas que tudo começa.</h2><p>A Mew nasceu da vontade de fazer marketing de uma forma mais consciente, criativa e conectada à realidade de cada negócio.</p><p>Acreditamos que uma marca não se constrói apenas com uma identidade bonita ou uma presença constante nas redes sociais. Ela se fortalece quando existe intenção em cada escolha, coerência em cada mensagem e estratégia em cada ação.</p><p>Somos movidos por ideias, atenção aos detalhes e pela busca constante de novas possibilidades.</p><h3>Mew. Marketing com identidade.</h3><a class="btn light" href="#contato">Vamos conversar sobre sua marca ↗</a></div></div></section>
+<section class="section philosophy" id="filosofia"><div class="wrap"><div class="eyebrow reveal"><span class="section-index">08 / </span>O que orienta nosso trabalho</div><div class="philosophy-grid"><div><h2 class="reveal">Não é sobre fazer mais barulho.<br/><em>É sobre fazer sentido.</em></h2><p class="lead reveal">Cada decisão importa: da primeira conversa à última entrega. Nosso compromisso é construir uma comunicação que tenha a cara da sua empresa.</p><a class="text-link reveal" href="#contato">Vamos criar juntos ↗</a></div><div class="philosophy-tiles"><div class="philosophy-tile reveal"><span>01 /</span><h3>Autenticidade</h3><p>Uma marca não precisa se parecer com todas as outras.</p></div><div class="philosophy-tile reveal"><span>02 /</span><h3>Clareza</h3><p>Boas ideias ganham força quando têm direção.</p></div><div class="philosophy-tile reveal"><span>03 /</span><h3>Proximidade</h3><p>Trabalhamos com pessoas, não apenas com perfis.</p></div></div></div></div></section>
+<section class="section" id="faq"><div class="wrap faq"><div class="reveal"><div class="eyebrow"><span class="section-index">09 / </span>Dúvidas frequentes</div><h2>Talvez você esteja se perguntando…</h2><p class="lead">Se ainda ficou alguma dúvida sobre como podemos trabalhar juntos, reunimos algumas respostas para ajudar.</p></div><div class="faq-list">
+<div class="faq-item"><button aria-expanded="false" class="faq-q">A Mew atende empresas de quais segmentos?<span class="plus">+</span></button><div class="faq-a">Trabalhamos com empresas de diferentes segmentos que desejam fortalecer sua marca, profissionalizar sua presença digital ou desenvolver estratégias de marketing alinhadas aos seus objetivos.</div></div>
+<div class="faq-item"><button aria-expanded="false" class="faq-q">A Mew trabalha apenas com gestão de redes sociais?<span class="plus">+</span></button><div class="faq-a">Não. Marketing e redes sociais são uma das nossas principais frentes, mas também desenvolvemos projetos de branding, identidade visual, websites e comunicação.</div></div>
+<div class="faq-item"><button aria-expanded="false" class="faq-q">Como funciona a contratação?<span class="plus">+</span></button><div class="faq-a">Começamos com uma conversa para entender sua empresa, seus objetivos e o momento da comunicação. Depois estruturamos uma proposta com escopo, entregas e condições.</div></div>
+<div class="faq-item"><button aria-expanded="false" class="faq-q">A Mew cria estratégias personalizadas?<span class="plus">+</span></button><div class="faq-a">Sim. Cada projeto parte de um entendimento do negócio, do público e dos objetivos. Não aplicamos uma fórmula única para todas as empresas.</div></div>
+<div class="faq-item"><button aria-expanded="false" class="faq-q">Como faço para solicitar uma proposta?<span class="plus">+</span></button><div class="faq-a">Preencha o formulário com algumas informações sobre sua empresa e o que procura. Nossa equipe poderá entender sua necessidade e orientar os próximos passos.</div></div>
+<div class="faq-item"><button aria-expanded="false" class="faq-q">Posso contratar apenas um serviço?<span class="plus">+</span></button><div class="faq-a">Sim. Você pode contratar uma solução específica ou avaliar uma integração entre diferentes serviços, conforme a necessidade da empresa.</div></div>
+</div></div></section>
+<section class="section contact" id="contato"><div class="wrap contact-grid"><div class="reveal"><div class="eyebrow"><span class="section-index">10 / </span>Vamos conversar</div><h2>Sua próxima fase começa com uma boa conversa.</h2><p class="lead">Conte um pouco sobre sua empresa e o que deseja construir. Vamos entender seu momento e identificar como a Mew pode ajudar sua marca a avançar.</p><p>Não importa se você está começando a estruturar sua presença digital ou se já tem uma operação de marketing e busca evoluir. Queremos conhecer seu desafio.</p><p class="micro">Prefere conversar diretamente? <a class="text-link" href="#" id="waText">Fale com a Mew pelo WhatsApp ↗</a></p></div>
+<div class="contact-card reveal"><h3>Conte um pouco sobre sua empresa.</h3><p class="form-intro">Preencha os dados essenciais para iniciarmos uma conversa. É rápido e sem compromisso.</p><form id="leadForm"><div class="form-grid">
+<div class="field"><label for="nome">Seu nome *</label><input id="nome" name="nome" placeholder="Como podemos te chamar?" required=""/></div>
+<div class="field"><label for="empresa">Empresa *</label><input id="empresa" name="empresa" placeholder="Nome da empresa" required=""/></div>
+<div class="field"><label for="whatsapp">WhatsApp *</label><input id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required="" type="tel"/></div>
+<div class="field full"><label for="servico">Como podemos ajudar? *</label><select id="servico" name="servico" required=""><option value="">Selecione uma opção</option><option>Marketing e gestão de redes sociais</option><option>Branding e identidade visual</option><option>Desenvolvimento de website</option><option>Design e comunicação</option><option>Mais de uma solução</option><option>Ainda não sei, preciso de orientação</option></select></div>
+<div class="field full"><label for="investimento">Investimento previsto (opcional)</label><select id="investimento" name="investimento"><option value="">Prefiro conversar sobre isso</option><option>Até R$ 1.500/mês</option><option>R$ 1.500 a R$ 3.000/mês</option><option>R$ 3.000 a R$ 5.000/mês</option><option>Acima de R$ 5.000/mês</option><option>Projeto pontual / fechado</option><option>Ainda não definido</option></select></div>
+<div class="field full"><label class="consent-checkbox"><input id="contactConsent" required="" type="checkbox"/> <span>Li a <a href="/privacidade.html" rel="noopener noreferrer" target="_blank">Política de Privacidade</a> e os <a href="/termos.html" rel="noopener noreferrer" target="_blank">Termos de Uso</a>, e estou ciente do tratamento dos dados para responder à minha solicitação. *</span></label></div><div class="field full"><button class="btn" type="submit">Continuar meu contato ↗</button></div>
+</div><p class="form-note">Os dados informados serão utilizados para analisar sua solicitação e responder ao contato, conforme nossa Política de Privacidade. Consulte nossa <a class="text-link" href="/privacidade.html" rel="noopener noreferrer" target="_blank">Política de Privacidade</a>.</p><div class="success" id="success" role="status">Seus dados foram validados apenas neste navegador. O envio à Mew ainda não está disponível: a integração com a planilha será feita em uma próxima etapa. Nenhuma solicitação foi registrada.</div></form></div></div></section>
+</main>
+<footer class="footer"><div class="wrap"><div class="footer-grid"><div><h3>Mew. Marketing com identidade.</h3><p>Estratégia, criatividade e tecnologia para marcas que querem construir uma presença digital com propósito.</p></div><div><h3>Navegação</h3><div class="footer-links"><a href="#inicio">Início</a><a href="#solucoes">Soluções</a><a href="#projetos">Projetos</a><a href="#sobre">Sobre a Mew</a><a href="#contato">Contato</a></div></div><div><h3>Contato</h3><div class="footer-links"><a href="#" id="waFooter">WhatsApp · (12) 98131-8313</a><a href="https://www.instagram.com/agencia.mew/" id="igLink" rel="noopener noreferrer" target="_blank">Instagram · @agencia.mew</a></div></div></div><div class="copyright"><span>© 2026 Mew. Todos os direitos reservados.</span><span><a href="/privacidade.html">Política de Privacidade</a> · <a href="/termos.html">Termos de Uso</a> · <button class="privacy-link" id="reopenConsent" type="button">Preferências de cookies</button></span></div></div></footer>
+<a aria-label="Falar com a Mew pelo WhatsApp" class="wa" href="#" id="waFloat">WhatsApp ↗</a>
+<script>
+// Configure estes dados antes de publicar.
+const WHATSAPP_NUMBER = "5512981318313"; // Ex.: 5511999999999 (somente números)
+const INSTAGRAM_URL = "https://www.instagram.com/agencia.mew/";
+function waUrl(){return WHATSAPP_NUMBER ? "https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent("Olá, equipe Mew! Conheci a agência pelo site e gostaria de entender como vocês podem ajudar minha empresa com marketing e presença digital. Podemos conversar?") : "#contato"}
+["waText","waFooter","waFloat"].forEach(id=>{const el=document.getElementById(id);el.href=waUrl();if(!WHATSAPP_NUMBER)el.addEventListener("click",e=>{e.preventDefault();document.querySelector("#contato").scrollIntoView({behavior:"smooth"})})});
+if(INSTAGRAM_URL)document.getElementById("igLink").href=INSTAGRAM_URL;
+const menu=document.getElementById("menu"),nav=document.getElementById("navlinks");
+menu.addEventListener("click",()=>{const open=nav.classList.toggle("show");menu.setAttribute("aria-expanded",open);menu.textContent=open?"×":"☰"});
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("show");menu.setAttribute("aria-expanded","false");menu.textContent="☰"}));
+document.querySelectorAll(".faq-q").forEach(btn=>btn.addEventListener("click",()=>{const item=btn.closest(".faq-item"),open=item.classList.toggle("open");btn.setAttribute("aria-expanded",open)}));
+document.getElementById("leadForm").addEventListener("submit",e=>{e.preventDefault();if(!e.target.reportValidity())return;document.getElementById("success").style.display="block";document.getElementById("success").scrollIntoView({behavior:"smooth",block:"nearest"})});
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+</script>
+<script>
+(function(){
+  document.querySelectorAll('a.btn, button.btn').forEach(function(btn){
+    if(btn.querySelector('.button-track')) return;
+    const arrow = btn.querySelector('span:not(.button-track)');
+    const label = Array.from(btn.childNodes).filter(n=>n.nodeType===Node.TEXT_NODE).map(n=>n.textContent).join(' ').trim();
+    if(!label) return;
+    Array.from(btn.childNodes).filter(n=>n.nodeType===Node.TEXT_NODE).forEach(n=>n.textContent='');
+    const track=document.createElement('span');track.className='button-track';
+    const first=document.createElement('span');first.textContent=label;
+    const second=document.createElement('span');second.textContent=label;
+    track.append(first,second);btn.prepend(track);
+    if(arrow) btn.appendChild(arrow);
+  });
+  const header=document.querySelector('.header');
+  const updateHeader=()=>header.classList.toggle('scrolled',window.scrollY>28);
+  updateHeader();window.addEventListener('scroll',updateHeader,{passive:true});
+  document.querySelectorAll('.section h2').forEach(function(h){
+    const words=h.innerHTML.split(/\s+/);
+    if(words.length>5 && !h.querySelector('em')){
+      const pivot=Math.max(2,Math.floor(words.length*.68));
+      h.innerHTML=words.slice(0,pivot).join(' ')+' <em>'+words.slice(pivot).join(' ')+'</em>';
+    }
+  });
+})();
+</script>
+<div aria-label="Preferências de privacidade" class="cookie-banner" hidden="" id="cookieBanner" role="region">
+<div class="cookie-copy"><strong>Sua privacidade importa.</strong><p>Usamos recursos essenciais para o funcionamento do site. Cookies de análise e marketing só serão ativados com sua autorização, caso sejam implementados. <a href="/privacidade.html">Saiba mais</a>.</p></div>
+<div class="cookie-actions"><button class="cookie-btn outline" id="cookieReject" type="button">Rejeitar opcionais</button><button class="cookie-btn outline" id="cookieCustomize" type="button">Personalizar</button><button class="cookie-btn" id="cookieAccept" type="button">Aceitar opcionais</button></div>
+</div>
+<div class="consent-backdrop" hidden="" id="consentBackdrop"></div>
+<section aria-labelledby="consentTitle" aria-modal="true" class="consent-dialog" hidden="" id="consentDialog" role="dialog" tabindex="-1">
+<button aria-label="Fechar preferências" class="dialog-close" id="cookieClose" type="button">×</button>
+<div class="eyebrow">Privacidade e transparência</div><h2 id="consentTitle">Suas preferências de cookies</h2>
+<p>Os recursos essenciais permanecem ativos para manter suas escolhas. As categorias opcionais ficam desligadas até que você autorize.</p>
+<div class="consent-option"><div><strong>Essenciais</strong><small>Preferências de privacidade e funcionamento básico.</small></div><span class="essential-label">Sempre ativos</span></div>
+<label class="consent-option"><span><strong>Análise</strong><small>Ajuda a compreender a utilização do site, quando configurada.</small></span><input id="allowAnalytics" type="checkbox"/></label>
+<label class="consent-option"><span><strong>Marketing</strong><small>Medição de campanhas e publicidade, quando configuradas.</small></span><input id="allowMarketing" type="checkbox"/></label>
+<p class="consent-footnote">Nesta versão não há scripts opcionais de análise ou publicidade instalados. Suas preferências ficam armazenadas localmente no navegador e poderão ser alteradas a qualquer momento.</p>
+<div class="cookie-actions"><button class="cookie-btn outline" id="cookieRejectModal" type="button">Rejeitar opcionais</button><button class="cookie-btn" id="cookieSave" type="button">Salvar preferências</button></div>
+</section>
+<script>
+(function(){
+const KEY='mew_privacy_choice_v1';
+const banner=document.getElementById('cookieBanner'), dialog=document.getElementById('consentDialog'), backdrop=document.getElementById('consentBackdrop');
+const analytics=document.getElementById('allowAnalytics'),marketing=document.getElementById('allowMarketing');
+let lastFocus=null;
+function getChoice(){try{return JSON.parse(localStorage.getItem(KEY)||'null')}catch(e){return null}}
+function saveChoice(a,m){try{localStorage.setItem(KEY,JSON.stringify({analytics:!!a,marketing:!!m,updatedAt:new Date().toISOString(),version:1}))}catch(e){}closeDialog();banner.hidden=true;}
+function openDialog(){lastFocus=document.activeElement;const c=getChoice();analytics.checked=!!c?.analytics;marketing.checked=!!c?.marketing;dialog.hidden=false;backdrop.hidden=false;banner.hidden=true;document.body.classList.add('modal-open');dialog.focus()}
+function closeDialog(){dialog.hidden=true;backdrop.hidden=true;document.body.classList.remove('modal-open');if(!getChoice())banner.hidden=false;if(lastFocus?.focus)lastFocus.focus()}
+if(!getChoice())banner.hidden=false;
+document.getElementById('cookieAccept').addEventListener('click',()=>saveChoice(true,true));
+document.getElementById('cookieReject').addEventListener('click',()=>saveChoice(false,false));
+document.getElementById('cookieCustomize').addEventListener('click',openDialog);
+document.getElementById('reopenConsent').addEventListener('click',openDialog);
+document.getElementById('cookieClose').addEventListener('click',closeDialog);
+document.getElementById('cookieRejectModal').addEventListener('click',()=>saveChoice(false,false));
+document.getElementById('cookieSave').addEventListener('click',()=>saveChoice(analytics.checked,marketing.checked));
+document.addEventListener('keydown',e=>{if(dialog.hidden)return;if(e.key==='Escape')closeDialog();if(e.key==='Tab'){const focusable=[...dialog.querySelectorAll('button,input,a[href]')].filter(el=>!el.disabled);const first=focusable[0],last=focusable.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}});
+})();
+</script>
+<!-- Rolagem com inércia: apenas mouse/trackpad em dispositivos desktop. -->
+<script>
+(function () {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const finePointer = window.matchMedia('(pointer: fine)');
+  let target = window.scrollY;
+  let current = window.scrollY;
+  let frame = 0;
+  let lastTime = 0;
+  let scrolling = false;
+
+  function enabled() {
+    return finePointer.matches && !reducedMotion.matches && window.innerWidth >= 768;
+  }
+  function maxScroll() {
+    return Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+  }
+  function stop() {
+    if (frame) cancelAnimationFrame(frame);
+    frame = 0;
+    scrolling = false;
+    current = target = window.scrollY;
+    lastTime = 0;
+  }
+  function animate(time) {
+    const dt = lastTime ? Math.min(time - lastTime, 64) : 16.67;
+    lastTime = time;
+    const factor = 1 - Math.exp(-dt / 135);
+    target = Math.min(maxScroll(), Math.max(0, target));
+    current += (target - current) * factor;
+    if (Math.abs(target - current) < 0.45) {
+      window.scrollTo({top: target, behavior: 'instant'});
+      stop();
+      return;
+    }
+    window.scrollTo({top: current, behavior: 'instant'});
+    frame = requestAnimationFrame(animate);
+  }
+  window.addEventListener('wheel', function (event) {
+    if (!enabled() || event.ctrlKey || event.metaKey || event.shiftKey || event.defaultPrevented) return;
+    if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) return;
+    if (event.target.closest('dialog, .consent-dialog, [data-native-scroll], textarea, select, [contenteditable="true"]')) return;
+    // Preserve native scrolling in scrollable widgets or containers.
+    for (let node = event.target; node && node !== document.body; node = node.parentElement) {
+      if (!(node instanceof Element)) break;
+      const style = getComputedStyle(node);
+      if (/(auto|scroll)/.test(style.overflowY) && node.scrollHeight > node.clientHeight + 2) return;
+    }
+    const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? window.innerHeight : 1;
+    const delta = event.deltaY * unit;
+    if (!delta) return;
+    const base = scrolling ? target : window.scrollY;
+    const next = Math.max(0, Math.min(maxScroll(), base + delta));
+    if (next === base && !scrolling) return;
+    event.preventDefault();
+    target = next;
+    if (!scrolling) {
+      scrolling = true;
+      current = window.scrollY;
+      lastTime = 0;
+      frame = requestAnimationFrame(animate);
+    }
+  }, {passive: false});
+  window.addEventListener('resize', stop, {passive: true});
+  reducedMotion.addEventListener('change', stop);
+  finePointer.addEventListener('change', stop);
+  // Native anchor navigation, keyboard navigation and browser history remain untouched.
+  document.addEventListener('click', e => { if (e.target.closest('a[href^="#"]')) stop(); }, true);
+  window.addEventListener('popstate', stop);
+  window.addEventListener('keydown', e => {
+    if (['PageUp','PageDown','Home','End','ArrowUp','ArrowDown',' '].includes(e.key)) stop();
+  }, true);
+})();
+</script>
+<script>
+(function(){
+ const nav=document.getElementById('navlinks');
+ const cursor=nav?.querySelector('.slide-tabs-cursor');
+ if(!nav||!cursor)return;
+ const tabs=[...nav.querySelectorAll('a[href^="#"]')];
+ const desktop=window.matchMedia('(min-width:851px)');
+ let selected=null;
+ function place(tab){
+   if(!desktop.matches||!tab){cursor.style.opacity='0';return;}
+   cursor.style.width=tab.offsetWidth+'px';
+   cursor.style.transform='translateX('+tab.offsetLeft+'px)';
+   cursor.style.opacity='1';
+   tabs.forEach(a=>a.classList.toggle('is-active',a===tab));
+ }
+ function reset(){if(!nav.matches(':focus-within')){cursor.style.opacity='0';tabs.forEach(a=>a.classList.remove('is-active'))}}
+ tabs.forEach(tab=>{
+   tab.addEventListener('pointerenter',()=>{if(desktop.matches)place(tab)});
+   tab.addEventListener('focus',()=>place(tab));
+   tab.addEventListener('click',()=>{selected=tab; if(desktop.matches)place(tab)});
+ });
+ nav.addEventListener('pointerleave',reset);
+ nav.addEventListener('focusout',()=>requestAnimationFrame(reset));
+ window.addEventListener('resize',()=>{if(selected&&desktop.matches)place(selected);else cursor.style.opacity='0'},{passive:true});
+})();
+</script>
+<script defer="" src="mew-cursor.js"></script></body></html>
