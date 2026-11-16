@@ -451,7 +451,7 @@ document.getElementById("leadForm").addEventListener("submit",async (event)=>{
   const button=form.querySelector('[type="submit"]');
   const data=Object.fromEntries(new FormData(form).entries());
   data.consent=document.getElementById("contactConsent").checked;
-  const phone=String(data.whatsapp||"").replace(/\\D/g,"");
+  const phone=String(data.whatsapp||"").replace(/\D/g,"");
   if(phone.length<10||phone.length>13){status.style.display="block";status.textContent="Informe um WhatsApp válido com DDD.";return;}
   status.style.display="block";status.textContent="Enviando sua solicitação…";
   button.disabled=true;button.setAttribute("aria-busy","true");
