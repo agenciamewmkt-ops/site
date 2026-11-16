@@ -69,6 +69,7 @@ export default async function handler(req, res) {
         investimento: data.investimento,
         consent: true,
         policyVersion: "2026-11",
+        source: data.source === "consulta" ? "consulta" : "homepage",
         receivedAt: new Date().toISOString()
       }),
       redirect: "follow",
