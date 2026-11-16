@@ -27,7 +27,7 @@ function doPost(e) {
     sheet.appendRow([
       new Date(),safe(body.nome,100),safe(body.empresa,120),safe(body.whatsapp,15),
       safe(body.servico,120),safe(body.investimento,100),"Sim",
-      safe(body.policyVersion,30),"Site Mew","Novo"
+      safe(body.policyVersion,30),safe(body.source,20),"Novo"
     ]);
     return result({ok:true});
   } catch (error) {
