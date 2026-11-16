@@ -740,6 +740,7 @@ function saveChoice(a,m){
 function openDialog(){lastFocus=document.activeElement;const c=getChoice();analytics.checked=!!c?.analytics;marketing.checked=!!c?.marketing;dialog.hidden=false;backdrop.hidden=false;banner.hidden=true;document.body.classList.add('modal-open');dialog.focus()}
 function closeDialog(){dialog.hidden=true;backdrop.hidden=true;document.body.classList.remove('modal-open');if(!getChoice())banner.hidden=false;if(lastFocus?.focus)lastFocus.focus()}
 if(!getChoice())banner.hidden=false;
+if(new URLSearchParams(window.location.search).has('preferencias'))openDialog();
 document.getElementById('cookieAccept').addEventListener('click',()=>saveChoice(true,true));
 document.getElementById('cookieReject').addEventListener('click',()=>saveChoice(false,false));
 document.getElementById('cookieCustomize').addEventListener('click',openDialog);
