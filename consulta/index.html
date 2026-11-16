@@ -3,13 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Solicite uma conversa | Mew Marketing Digital</title>
-<meta name="description" content="Conte sobre sua empresa e receba um contato da Mew para conversar sobre marketing, redes sociais, branding e sites.">
-<meta name="robots" content="index,follow">
+<title>Solicitar proposta de marketing digital | Mew</title><link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="48x48"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="description" content="Conte sobre sua empresa e fale com a Mew sobre gestão de redes sociais, marketing digital, identidade visual ou desenvolvimento de sites.">
+<meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://www.agenciamew.com/consulta/">
+<meta name="theme-color" content="#1c120f">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Mew Marketing Digital">
+<meta property="og:image" content="https://www.agenciamew.com/logo-marrom.png">
+<meta property="og:image:alt" content="Logotipo Mew Marketing Digital">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Solicitar proposta de marketing digital | Mew">
+<meta name="twitter:description" content="Converse com a Mew sobre seu projeto de marketing e presença digital.">
+<meta name="twitter:image" content="https://www.agenciamew.com/logo-marrom.png">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Vamos conversar sobre sua marca? | Mew">
-<meta property="og:description" content="Marketing com identidade. Conte sobre sua empresa e converse com a Mew.">
+<meta property="og:title" content="Solicitar proposta de marketing digital | Mew">
+<meta property="og:description" content="Preencha o formulário e inicie uma conversa sobre marketing, gestão de redes sociais, branding e sites.">
 <meta property="og:url" content="https://www.agenciamew.com/consulta/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +49,54 @@ h1{font-size:clamp(37px,4.2vw,58px);margin:20px 0 23px;max-width:620px}h1 span{c
 @media(max-width:510px){.shell{width:calc(100% - 32px)}.hero-layout{padding:43px 0 60px;gap:35px}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.nav .logo{width:103px}.top-cta{font-size:11px;padding:9px 12px}.strip .shell{gap:9px}.strip span{font-size:9px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.submit{transition:none}}
 </style>
-</head>
+<!-- Mew: GTM e Microsoft Clarity carregam somente após consentimento opcional. -->
+<script>
+(function(window, document) {
+  var KEY = "mew_privacy_choice_v1";
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
+  window.gtag("consent", "default", {
+    analytics_storage:"denied", ad_storage:"denied",
+    ad_user_data:"denied", ad_personalization:"denied",
+    wait_for_update:500
+  });
+  window.gtag("js", new Date());
+  var initializedGTM=false, initializedClarity=false;
+  function loadGTM(){
+    if(initializedGTM)return;
+    initializedGTM=true;
+    var script=document.createElement("script");
+    script.async=true;
+    script.src="https://www.googletagmanager.com/gtm.js?id=GTM-N8M8M5QK";
+    document.head.appendChild(script);
+    window.dataLayer.push({event:"gtm.js", "gtm.start":Date.now()});
+  }
+  function loadClarity(){
+    if(initializedClarity)return;
+    initializedClarity=true;
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "zeoyz40uyb");
+  }
+  window.mewApplyTrackingConsent = function(analytics,marketing){
+    analytics=!!analytics;marketing=!!marketing;
+    window.gtag("consent","update",{
+      analytics_storage:analytics?"granted":"denied",
+      ad_storage:marketing?"granted":"denied",
+      ad_user_data:marketing?"granted":"denied",
+      ad_personalization:marketing?"granted":"denied"
+    });
+    if(analytics||marketing)loadGTM();
+    if(analytics)loadClarity();
+  };
+  try {
+    var choice=JSON.parse(localStorage.getItem(KEY)||"null");
+    if(choice && (choice.analytics||choice.marketing)) window.mewApplyTrackingConsent(choice.analytics, choice.marketing);
+  } catch(e) {}
+})(window,document);
+</script></head>
 <body>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 <header class="header"><div class="shell nav">
