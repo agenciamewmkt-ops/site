@@ -52,7 +52,7 @@ h1{font-size:clamp(37px,4.2vw,58px);margin:20px 0 23px;max-width:620px}h1 span{c
 <!-- Mew: GTM e Microsoft Clarity carregam somente após consentimento opcional. -->
 <script>
 (function(window, document) {
-  var KEY = "mew_privacy_choice_v1";
+  var KEY = "mew_privacy_choice_v2";
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
   window.gtag("consent", "default", {
@@ -194,13 +194,13 @@ h1{font-size:clamp(37px,4.2vw,58px);margin:20px 0 23px;max-width:620px}h1 span{c
 </div>
 <script>
 (function(){
-  var key="mew_privacy_choice_v1", box=document.getElementById("mewCookieMini");
+  var key="mew_privacy_choice_v2", box=document.getElementById("mewCookieMini");
   var existing=null;try{existing=JSON.parse(localStorage.getItem(key)||"null")}catch(e){}
   if(!existing)box.hidden=false;
   box.addEventListener("click",function(e){
     var button=e.target.closest("button[data-choice]");if(!button)return;
     var mode=button.dataset.choice, a=mode!=="reject", m=mode==="accept";
-    try{localStorage.setItem(key,JSON.stringify({analytics:a,marketing:m,updatedAt:new Date().toISOString(),version:1}))}catch(e){}
+    try{localStorage.setItem(key,JSON.stringify({analytics:a,marketing:m,updatedAt:new Date().toISOString(),version:2}))}catch(e){}
     if(window.mewApplyTrackingConsent)window.mewApplyTrackingConsent(a,m);
     box.hidden=true;
   });
