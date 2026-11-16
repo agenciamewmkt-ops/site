@@ -352,7 +352,7 @@ footer{background:#1e1512!important;color:#e9d8c8}
   .wa.wa-icon svg { width: 29px; height: 29px; }
 }
 @media (prefers-reduced-motion: reduce) { .wa.wa-icon { animation: none !important; } .wa.wa-icon svg { transition: none !important; } }
-</style></head>
+</style><style>.mew-honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}</style></head>
 <body>
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 <div class="topbar">ESTRATÉGIA · CRIATIVIDADE · IDENTIDADE</div>
@@ -416,14 +416,14 @@ footer{background:#1e1512!important;color:#e9d8c8}
 <div class="faq-item"><button aria-expanded="false" class="faq-q">Posso contratar apenas um serviço?<span class="plus">+</span></button><div class="faq-a">Sim. Você pode contratar uma solução específica ou avaliar uma integração entre diferentes serviços, conforme a necessidade da empresa.</div></div>
 </div></div></section>
 <section class="section contact" id="contato"><div class="wrap contact-grid"><div class="reveal"><div class="eyebrow"><span class="section-index">10 / </span>Vamos conversar</div><h2>Sua próxima fase começa com uma boa conversa.</h2><p class="lead">Conte um pouco sobre sua empresa e o que deseja construir. Vamos entender seu momento e identificar como a Mew pode ajudar sua marca a avançar.</p><p>Não importa se você está começando a estruturar sua presença digital ou se já tem uma operação de marketing e busca evoluir. Queremos conhecer seu desafio.</p><p class="micro">Prefere conversar diretamente? <a class="text-link" href="#" id="waText">Fale com a Mew pelo WhatsApp ↗</a></p></div>
-<div class="contact-card reveal"><h3>Conte um pouco sobre sua empresa.</h3><p class="form-intro">Preencha os dados essenciais para iniciarmos uma conversa. É rápido e sem compromisso.</p><form id="leadForm"><div class="form-grid">
+<div class="contact-card reveal"><h3>Conte um pouco sobre sua empresa.</h3><p class="form-intro">Preencha os dados essenciais para iniciarmos uma conversa. É rápido e sem compromisso.</p><form id="leadForm" action="/api/lead" method="post"><div class="mew-honeypot" aria-hidden="true"><label for="website">Deixe este campo vazio</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"/></div><div class="form-grid">
 <div class="field"><label for="nome">Seu nome *</label><input id="nome" name="nome" placeholder="Como podemos te chamar?" required=""/></div>
 <div class="field"><label for="empresa">Empresa *</label><input id="empresa" name="empresa" placeholder="Nome da empresa" required=""/></div>
 <div class="field"><label for="whatsapp">WhatsApp *</label><input id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required="" type="tel"/></div>
 <div class="field full"><label for="servico">Como podemos ajudar? *</label><select id="servico" name="servico" required=""><option value="">Selecione uma opção</option><option>Marketing e gestão de redes sociais</option><option>Branding e identidade visual</option><option>Desenvolvimento de website</option><option>Design e comunicação</option><option>Mais de uma solução</option><option>Ainda não sei, preciso de orientação</option></select></div>
 <div class="field full"><label for="investimento">Investimento previsto (opcional)</label><select id="investimento" name="investimento"><option value="">Prefiro conversar sobre isso</option><option>Até R$ 1.500/mês</option><option>R$ 1.500 a R$ 3.000/mês</option><option>R$ 3.000 a R$ 5.000/mês</option><option>Acima de R$ 5.000/mês</option><option>Projeto pontual / fechado</option><option>Ainda não definido</option></select></div>
 <div class="field full"><label class="consent-checkbox"><input id="contactConsent" required="" type="checkbox"/> <span>Li a <a href="/privacidade.html" rel="noopener noreferrer" target="_blank">Política de Privacidade</a> e os <a href="/termos.html" rel="noopener noreferrer" target="_blank">Termos de Uso</a>, e estou ciente do tratamento dos dados para responder à minha solicitação. *</span></label></div><div class="field full"><button class="btn" type="submit">Continuar meu contato ↗</button></div>
-</div><p class="form-note">Os dados informados serão utilizados para analisar sua solicitação e responder ao contato, conforme nossa Política de Privacidade. Consulte nossa <a class="text-link" href="/privacidade.html" rel="noopener noreferrer" target="_blank">Política de Privacidade</a>.</p><div class="success" id="success" role="status">Seus dados foram validados apenas neste navegador. O envio à Mew ainda não está disponível: a integração com a planilha será feita em uma próxima etapa. Nenhuma solicitação foi registrada.</div></form></div></div></section>
+</div><p class="form-note">Os dados informados serão utilizados para analisar sua solicitação e responder ao contato, conforme nossa Política de Privacidade. Consulte nossa <a class="text-link" href="/privacidade.html" rel="noopener noreferrer" target="_blank">Política de Privacidade</a>.</p><div class="success" id="success" role="status"></div></form></div></div></section>
 </main>
 <footer class="footer"><div class="wrap"><div class="footer-grid"><div><h3>Mew. Marketing com identidade.</h3><p>Estratégia, criatividade e tecnologia para marcas que querem construir uma presença digital com propósito.</p></div><div><h3>Navegação</h3><div class="footer-links"><a href="#inicio">Início</a><a href="#solucoes">Soluções</a><a href="#projetos">Projetos</a><a href="#sobre">Sobre a Mew</a><a href="#contato">Contato</a></div></div><div><h3>Contato</h3><div class="footer-links"><a href="#" id="waFooter">WhatsApp · (12) 98131-8313</a><a href="https://www.instagram.com/agencia.mew/" id="igLink" rel="noopener noreferrer" target="_blank">Instagram · @agencia.mew</a></div></div></div><div class="copyright"><span>© 2026 Mew. Todos os direitos reservados.</span><span><a href="/privacidade.html">Política de Privacidade</a> · <a href="/termos.html">Termos de Uso</a> · <button class="privacy-link" id="reopenConsent" type="button">Preferências de cookies</button></span></div></div></footer>
 <a aria-label="Conversar com a Mew pelo WhatsApp" class="wa wa-icon" href="#" id="waFloat" title="Conversar pelo WhatsApp">
@@ -444,7 +444,34 @@ const menu=document.getElementById("menu"),nav=document.getElementById("navlinks
 menu.addEventListener("click",()=>{const open=nav.classList.toggle("show");menu.setAttribute("aria-expanded",open);menu.textContent=open?"×":"☰"});
 nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("show");menu.setAttribute("aria-expanded","false");menu.textContent="☰"}));
 document.querySelectorAll(".faq-q").forEach(btn=>btn.addEventListener("click",()=>{const item=btn.closest(".faq-item"),open=item.classList.toggle("open");btn.setAttribute("aria-expanded",open)}));
-document.getElementById("leadForm").addEventListener("submit",e=>{e.preventDefault();if(!e.target.reportValidity())return;document.getElementById("success").style.display="block";document.getElementById("success").scrollIntoView({behavior:"smooth",block:"nearest"})});
+document.getElementById("leadForm").addEventListener("submit",async (event)=>{
+  event.preventDefault();
+  const form=event.currentTarget, status=document.getElementById("success");
+  if(!form.reportValidity())return;
+  const button=form.querySelector('[type="submit"]');
+  const data=Object.fromEntries(new FormData(form).entries());
+  data.consent=document.getElementById("contactConsent").checked;
+  const phone=String(data.whatsapp||"").replace(/\D/g,"");
+  if(phone.length<10||phone.length>13){status.style.display="block";status.textContent="Informe um WhatsApp válido com DDD.";return;}
+  status.style.display="block";status.textContent="Enviando sua solicitação…";
+  button.disabled=true;button.setAttribute("aria-busy","true");
+  try{
+    const controller=new AbortController();
+    const timer=setTimeout(()=>controller.abort(),12000);
+    let response;
+    try{response=await fetch("/api/lead",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data),signal:controller.signal})}
+    finally{clearTimeout(timer)}
+    const result=await response.json().catch(()=>({}));
+    if(!response.ok||result.ok!==true)throw Error(result.message||"Falha de envio");
+    status.textContent="Recebemos sua solicitação! Nossa equipe entrará em contato pelo WhatsApp informado.";
+    form.reset();
+  }catch(error){
+    status.textContent="Não foi possível enviar agora. Tente novamente ou entre em contato pelo WhatsApp.";
+  }finally{
+    button.disabled=false;button.removeAttribute("aria-busy");
+    status.scrollIntoView({behavior:"smooth",block:"nearest"});
+  }
+});
 const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");observer.unobserve(entry.target)}}),{threshold:.12});
 document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
 </script>
