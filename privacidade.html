@@ -1,4 +1,4 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="index,follow"><title>Política de Privacidade | Mew</title><style>:root{font-family:Arial,sans-serif;color:#34251e;background:#f7f1e9}*{box-sizing:border-box}body{margin:0}header{padding:24px max(20px,calc((100vw - 920px)/2));border-bottom:1px solid #d8c8b8;display:flex;justify-content:space-between;align-items:center}header a{color:#34251e;text-decoration:none}header strong{font:2rem Georgia,serif}main{max-width:920px;margin:auto;padding:60px 24px 90px}h1{font:clamp(2.5rem,6vw,4.4rem)/1.05 Georgia,serif;letter-spacing:-.04em}h2{font:1.5rem Georgia,serif;margin-top:38px}p,li{line-height:1.75;color:#55483e}a{color:#8d442c}aside{border-left:3px solid #b95731;background:#eadbcb;padding:14px 20px;margin:30px 0}footer{border-top:1px solid #d8c8b8;padding:24px;text-align:center;font-size:.8rem}small{color:#77685d}
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="index,follow"><title>Política de Privacidade | Mew</title><meta name="description" content="Entenda como a Mew Marketing Digital utiliza, protege e armazena os dados pessoais fornecidos em seus formulários e canais de contato."><link rel="canonical" href="https://www.agenciamew.com/privacidade.html"><meta name="theme-color" content="#2b1d18"><link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="48x48"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><style>:root{font-family:Arial,sans-serif;color:#34251e;background:#f7f1e9}*{box-sizing:border-box}body{margin:0}header{padding:24px max(20px,calc((100vw - 920px)/2));border-bottom:1px solid #d8c8b8;display:flex;justify-content:space-between;align-items:center}header a{color:#34251e;text-decoration:none}header strong{font:2rem Georgia,serif}main{max-width:920px;margin:auto;padding:60px 24px 90px}h1{font:clamp(2.5rem,6vw,4.4rem)/1.05 Georgia,serif;letter-spacing:-.04em}h2{font:1.5rem Georgia,serif;margin-top:38px}p,li{line-height:1.75;color:#55483e}a{color:#8d442c}aside{border-left:3px solid #b95731;background:#eadbcb;padding:14px 20px;margin:30px 0}footer{border-top:1px solid #d8c8b8;padding:24px;text-align:center;font-size:.8rem}small{color:#77685d}
 /* Tipografia de títulos — atualização solicitada */
 @media (min-width: 769px) {
   h1, .hero h1 { font-size: 58px !important; }
@@ -19,7 +19,54 @@ h1,h2,h3,h4{font-family:'Fugaz One',Impact,sans-serif!important;font-weight:400!
 h2{font-size:40px!important;line-height:1.18}
 @media(max-width:600px){h2{font-size:clamp(28px,7vw,40px)!important}}
 </style>
-<link rel="stylesheet" href="mew-cursor.css"/></head><body><header><a href="/"><strong>mew.</strong></a><a href="/">← Voltar ao site</a></header><main><small>Última atualização: 16 de novembro de 2026</small><h1>Política de Privacidade</h1><p>Esta Política de Privacidade explica como a Agência Mew trata dados pessoais no site institucional, em observância à Lei nº 13.709/2018 (LGPD). Leia também os <a href="/termos.html">Termos de Uso</a>.</p>
+<link rel="stylesheet" href="mew-cursor.css"/><!-- Mew: GTM e Microsoft Clarity carregam somente após consentimento opcional. -->
+<script>
+(function(window, document) {
+  var KEY = "mew_privacy_choice_v1";
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
+  window.gtag("consent", "default", {
+    analytics_storage:"denied", ad_storage:"denied",
+    ad_user_data:"denied", ad_personalization:"denied",
+    wait_for_update:500
+  });
+  window.gtag("js", new Date());
+  var initializedGTM=false, initializedClarity=false;
+  function loadGTM(){
+    if(initializedGTM)return;
+    initializedGTM=true;
+    var script=document.createElement("script");
+    script.async=true;
+    script.src="https://www.googletagmanager.com/gtm.js?id=GTM-N8M8M5QK";
+    document.head.appendChild(script);
+    window.dataLayer.push({event:"gtm.js", "gtm.start":Date.now()});
+  }
+  function loadClarity(){
+    if(initializedClarity)return;
+    initializedClarity=true;
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "zeoyz40uyb");
+  }
+  window.mewApplyTrackingConsent = function(analytics,marketing){
+    analytics=!!analytics;marketing=!!marketing;
+    window.gtag("consent","update",{
+      analytics_storage:analytics?"granted":"denied",
+      ad_storage:marketing?"granted":"denied",
+      ad_user_data:marketing?"granted":"denied",
+      ad_personalization:marketing?"granted":"denied"
+    });
+    if(analytics||marketing)loadGTM();
+    if(analytics)loadClarity();
+  };
+  try {
+    var choice=JSON.parse(localStorage.getItem(KEY)||"null");
+    if(choice && (choice.analytics||choice.marketing)) window.mewApplyTrackingConsent(choice.analytics, choice.marketing);
+  } catch(e) {}
+})(window,document);
+</script></head><body><header><a href="/"><strong>mew.</strong></a><a href="/">← Voltar ao site</a></header><main><small>Última atualização: 16 de novembro de 2026</small><h1>Política de Privacidade</h1><p>Esta Política de Privacidade explica como a Agência Mew trata dados pessoais no site institucional, em observância à Lei nº 13.709/2018 (LGPD). Leia também os <a href="/termos.html">Termos de Uso</a>.</p>
 <aside><strong>Informações a completar antes da publicação:</strong> razão social ou identificação legal do controlador, CNPJ (se aplicável), endereço ou cidade de atuação e canal efetivo para solicitações de titulares. Sem esses dados, esta política é uma minuta operacional, não uma versão jurídica final.</aside>
 <h2>1. Quem controla os dados</h2><p>Controlador: <strong>[RAZÃO SOCIAL OU IDENTIFICAÇÃO LEGAL DA MEW]</strong>, <strong>[CNPJ, SE APLICÁVEL]</strong>, com contato para privacidade em <strong>[CANAL DE PRIVACIDADE A DEFINIR]</strong>. O perfil institucional no Instagram é <a href="https://www.instagram.com/agencia.mew/">@agencia.mew</a>. O WhatsApp comercial é +55 (12) 98131-8313, que poderá ser usado para atendimento e solicitações enquanto não houver canal específico publicado.</p>
 <h2>2. Quais dados podemos tratar</h2><p>Quando você decide entrar em contato, podemos tratar nome, empresa, telefone/WhatsApp, serviço de interesse, faixa de investimento (opcional) e o conteúdo das mensagens. O site também pode processar dados técnicos necessários ao funcionamento e à segurança, como informações de navegador e registros de acesso produzidos pela infraestrutura de hospedagem.</p>
