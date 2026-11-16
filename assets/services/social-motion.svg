@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Composições digitais e conteúdo em movimento">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f9f2e5"/><stop offset=".53" stop-color="#ead8bf"/><stop offset="1" stop-color="#c99062"/></linearGradient>
+<linearGradient id="phone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#40261b"/><stop offset="1" stop-color="#140e0c"/></linearGradient>
+<linearGradient id="poster" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f0c99c"/><stop offset=".55" stop-color="#ae6d47"/><stop offset="1" stop-color="#613624"/></linearGradient>
+<linearGradient id="shine" x1="0" y1="0" x2="1" y2=".7"><stop stop-color="#ffeacf"/><stop offset="1" stop-color="#bd8157"/></linearGradient>
+<filter id="drop"><feGaussianBlur stdDeviation="18"/></filter>
+<clipPath id="screen"><rect x="183" y="108" width="234" height="382" rx="19"/></clipPath>
+<style>
+.float-a{animation:floatA 7s ease-in-out infinite}.float-b{animation:floatB 8s ease-in-out infinite}.feed{animation:feed 9s ease-in-out infinite alternate}.bubble{animation:bubble 5s ease-in-out infinite alternate}.orbit{animation:spin 25s linear infinite;transform-origin:300px 300px}
+@keyframes floatA{0%,100%{transform:translate(-6px,6px) rotate(-8deg)}50%{transform:translate(4px,-7px) rotate(-4deg)}}
+@keyframes floatB{0%,100%{transform:translate(7px,-5px) rotate(10deg)}50%{transform:translate(-4px,7px) rotate(5deg)}}
+@keyframes feed{0%,22%{transform:translateY(0)}76%,100%{transform:translateY(-100px)}}
+@keyframes bubble{from{opacity:.5;transform:translateY(6px)}to{opacity:1;transform:translateY(-10px)}}
+@keyframes spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</defs>
+<rect width="600" height="600" fill="url(#bg)"/>
+<circle cx="298" cy="290" r="229" fill="none" stroke="#fff5e8" stroke-width="1.4" opacity=".7" class="orbit" stroke-dasharray="3 15"/>
+<circle cx="470" cy="142" r="85" fill="#fff0d9" opacity=".55"/><circle cx="104" cy="458" r="120" fill="#d59a6f" opacity=".25"/>
+<ellipse cx="302" cy="532" rx="196" ry="29" fill="#653e26" opacity=".18" filter="url(#drop)"/>
+<g class="float-a">
+<rect x="62" y="170" width="177" height="216" rx="18" fill="#fff4e5" stroke="#fcf2e6" stroke-width="3"/>
+<rect x="77" y="186" width="147" height="126" rx="10" fill="url(#poster)"/>
+<path d="M82 285Q111 231 149 259T218 209L218 312H82Z" fill="#e7b17c" opacity=".95"/>
+<circle cx="161" cy="216" r="27" fill="#fff3d8" opacity=".8"/>
+<rect x="77" y="333" width="115" height="6" rx="3" fill="#ac8062"/><rect x="77" y="348" width="78" height="6" rx="3" fill="#cab19b"/>
+<circle cx="211" cy="348" r="8" fill="#b97850"/>
+</g>
+<g class="float-b">
+<rect x="371" y="197" width="171" height="232" rx="19" fill="#fff8ed" stroke="#fff3e1" stroke-width="3"/>
+<rect x="386" y="211" width="140" height="149" rx="11" fill="#623b30"/>
+<circle cx="455" cy="276" r="47" fill="none" stroke="#ddb080" stroke-width="26"/>
+<circle cx="455" cy="276" r="22" fill="#f3d0a5"/>
+<rect x="388" y="382" width="107" height="7" rx="4" fill="#ac8062"/><rect x="388" y="398" width="79" height="7" rx="4" fill="#d1b6a3"/>
+</g>
+<g>
+<rect x="167" y="78" width="270" height="444" rx="43" fill="#271a15" stroke="#9a6b4b" stroke-width="4"/>
+<rect x="180" y="94" width="242" height="413" rx="28" fill="#fff5e6"/>
+<g clip-path="url(#screen)">
+<rect x="183" y="108" width="234" height="382" fill="#f9f0e4"/>
+<rect x="183" y="108" width="234" height="44" fill="#fefaf3"/><circle cx="208" cy="129" r="10" fill="#b9794e"/><rect x="225" y="124" width="70" height="7" rx="3" fill="#8b5a3c"/>
+<g class="feed">
+<rect x="183" y="155" width="234" height="224" fill="url(#poster)"/>
+<path d="M192 337Q270 225 312 271T435 229V389H192Z" fill="#f8dfb6" opacity=".45"/>
+<path d="M222 324Q258 231 289 299T393 216" fill="none" stroke="url(#shine)" stroke-width="36" stroke-linecap="round"/>
+<text x="205" y="202" fill="#fff5e6" font-family="Arial" font-size="19" font-weight="bold" letter-spacing="3">CREATIVE</text>
+<text x="205" y="224" fill="#fff5e6" font-family="Arial" font-size="13" letter-spacing="3">IN MOTION</text>
+<circle cx="212" cy="404" r="12" fill="#c88457"/><rect x="235" y="397" width="100" height="7" rx="3" fill="#865a44"/>
+<rect x="235" y="414" width="148" height="5" rx="3" fill="#c3a38b"/>
+<rect x="200" y="447" width="201" height="132" rx="12" fill="#dec6aa"/>
+<path d="M200 548Q260 464 310 520T400 484" stroke="#bf7954" stroke-width="34" fill="none"/>
+</g>
+</g>
+<rect x="264" y="99" width="72" height="13" rx="7" fill="#271a15"/>
+</g>
+<g class="bubble"><circle cx="461" cy="123" r="34" fill="#fff4e6" stroke="#ecd8bf" stroke-width="2"/><path d="M446 124l10 10 20-23" fill="none" stroke="#b8784f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>
