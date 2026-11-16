@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Interface de site responsivo com rolagem e elementos animados">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbf6ec"/><stop offset=".6" stop-color="#eddcc4"/><stop offset="1" stop-color="#d7b697"/></linearGradient>
+<linearGradient id="webhero" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#39241b"/><stop offset="1" stop-color="#7b4d34"/></linearGradient>
+<linearGradient id="orb" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7dab1"/><stop offset=".55" stop-color="#b97342"/><stop offset="1" stop-color="#fff1d1"/></linearGradient>
+<filter id="shadow"><feGaussianBlur stdDeviation="16"/></filter><clipPath id="viewport"><rect x="70" y="131" width="460" height="315" rx="3"/></clipPath>
+<style>
+.scroll{animation:scroll 10s ease-in-out infinite alternate}.float{animation:float 7s ease-in-out infinite alternate}.pointer{animation:cursor 7s ease-in-out infinite}.pulse{animation:pulse 4s ease-in-out infinite alternate}
+@keyframes scroll{0%,15%{transform:translateY(0)}83%,100%{transform:translateY(-116px)}}@keyframes float{to{transform:translateY(-13px) rotate(9deg)}}@keyframes pulse{to{opacity:.38;transform:scale(1.1)}}@keyframes cursor{0%,24%{transform:translate(0,0)}45%{transform:translate(-50px,38px)}60%{transform:translate(-18px,83px)}82%,100%{transform:translate(0,0)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style></defs>
+<rect width="600" height="600" fill="url(#bg)"/>
+<circle cx="493" cy="99" r="94" fill="#fff4e5" opacity=".6"/>
+<ellipse cx="305" cy="512" rx="216" ry="32" fill="#8b6345" opacity=".22" filter="url(#shadow)"/>
+<g class="float">
+<rect x="368" y="91" width="145" height="132" rx="14" fill="#faf2e6" stroke="#e8cdb0" stroke-width="2"/>
+<rect x="382" y="106" width="117" height="70" rx="7" fill="#c9875e"/>
+<circle cx="443" cy="143" r="25" fill="none" stroke="#ffdfb6" stroke-width="12"/>
+<rect x="385" y="189" width="84" height="5" rx="2" fill="#c39e80"/><rect x="385" y="200" width="62" height="4" rx="2" fill="#e1cdb6"/>
+</g>
+<rect x="47" y="97" width="506" height="379" rx="19" fill="#fef9f0" stroke="#d6c3b2" stroke-width="3"/>
+<rect x="47" y="97" width="506" height="34" rx="19" fill="#efe4d6"/>
+<rect x="47" y="116" width="506" height="15" fill="#efe4d6"/>
+<circle cx="73" cy="114" r="5" fill="#c78c72"/><circle cx="90" cy="114" r="5" fill="#e0ba91"/><circle cx="107" cy="114" r="5" fill="#b3a08e"/>
+<rect x="203" y="106" width="190" height="14" rx="7" fill="#fffaf3"/>
+<g clip-path="url(#viewport)">
+<g class="scroll">
+<rect x="70" y="131" width="460" height="240" fill="url(#webhero)"/>
+<text x="98" y="184" fill="#e9b991" font-family="Arial,sans-serif" font-size="11" font-weight="bold" letter-spacing="3">DESIGN COM PROPÓSITO</text>
+<text x="98" y="232" fill="#fff7e9" font-family="Arial,sans-serif" font-size="35" font-weight="bold">Ideias em</text>
+<text x="98" y="269" fill="#f1bb8b" font-family="Arial,sans-serif" font-size="35" font-weight="bold">movimento.</text>
+<rect x="98" y="296" width="132" height="25" rx="13" fill="#e6b58b"/>
+<g class="float"><circle cx="427" cy="240" r="74" fill="url(#orb)"/><circle cx="454" cy="218" r="22" fill="#ffeacd" opacity=".7"/></g>
+<rect x="70" y="370" width="460" height="230" fill="#fff7e9"/>
+<rect x="97" y="392" width="105" height="7" rx="3" fill="#a37e65"/>
+<rect x="97" y="410" width="206" height="17" rx="5" fill="#422e26"/>
+<rect x="98" y="440" width="125" height="94" rx="10" fill="#edc99c"/>
+<rect x="239" y="440" width="125" height="94" rx="10" fill="#b87b55"/>
+<rect x="380" y="440" width="125" height="94" rx="10" fill="#e8d9c2"/>
+<rect x="98" y="551" width="390" height="7" rx="3" fill="#dac8b5"/>
+</g>
+</g>
+<path d="M292 476L264 529H336L316 476Z" fill="#e8dacc"/><rect x="239" y="526" width="122" height="16" rx="8" fill="#c4af9a"/>
+<g class="pointer"><path d="M482 335L492 382L501 365L518 373L524 362L506 353Z" fill="#f9ecdc" stroke="#472b20" stroke-width="3"/></g>
+<g class="pulse"><circle cx="486" cy="351" r="23" fill="none" stroke="#efbd91" stroke-width="3"/></g>
+</svg>
