@@ -77,4 +77,31 @@ h2{font-size:40px!important;line-height:1.18}
 <h2>7. Transferências internacionais</h2><p>Serviços de infraestrutura e plataformas de terceiros podem envolver tratamento fora do Brasil. Quando aplicável, a Mew deverá adotar os mecanismos e salvaguardas exigidos pela LGPD e pela regulamentação da ANPD, considerando os fornecedores efetivamente contratados.</p>
 <h2>8. Retenção e segurança</h2><p>Os dados serão mantidos pelo período necessário para cumprir as finalidades informadas e eventuais obrigações legais ou exercício regular de direitos. A Mew deverá definir e documentar internamente o prazo concreto de retenção para os leads e providenciar exclusão ou anonimização quando não forem mais necessários, observadas as bases legais aplicáveis. Medidas técnicas e organizacionais proporcionais aos riscos deverão proteger os dados contra acesso não autorizado e incidentes.</p>
 <h2>9. Seus direitos</h2><p>Você pode solicitar, conforme a LGPD, confirmação do tratamento, acesso, correção, anonimização, bloqueio ou eliminação quando cabível, portabilidade nos termos da regulamentação, informações sobre compartilhamento e revisão ou revogação de consentimento. As solicitações poderão ser feitas pelo <strong>[CANAL DE PRIVACIDADE A DEFINIR]</strong>. Também é possível apresentar petição à ANPD nas hipóteses previstas em lei.</p>
-<h2>10. Alterações desta política</h2><p>Esta política poderá ser atualizada quando houver mudanças no site, nas ferramentas utilizadas ou nas práticas de tratamento. A data de atualização será indicada no topo da página.</p></main><footer>© 2026 Mew · <a href="/privacidade.html">Privacidade</a> · <a href="/termos.html">Termos</a></footer><script defer src="mew-cursor.js"></script></body></html>
+<h2>10. Alterações desta política</h2><p>Esta política poderá ser atualizada quando houver mudanças no site, nas ferramentas utilizadas ou nas práticas de tratamento. A data de atualização será indicada no topo da página.</p></main><footer>© 2026 Mew · <a href="/privacidade.html">Privacidade</a> · <a href="/termos.html">Termos</a></footer><script defer src="mew-cursor.js"></script><style>
+.mew-cookie-mini{position:fixed;z-index:9997;left:16px;bottom:16px;max-width:min(520px,calc(100% - 32px));padding:20px;background:#f7f0e8;border:1px solid #c9aa92;border-radius:14px;box-shadow:0 18px 50px #0005;color:#30221b;font:400 12px/1.6 Montserrat,Arial,sans-serif}
+.mew-cookie-mini[hidden]{display:none!important}
+.mew-cookie-mini strong{font-weight:700;font-size:14px}.mew-cookie-mini p{margin:7px 0 13px;color:#57483d}.mew-cookie-mini-actions{display:flex;gap:8px;flex-wrap:wrap}
+.mew-cookie-mini button{padding:10px 14px;border-radius:25px;border:1px solid #52382c;background:transparent;color:#30221b;font:700 11px Montserrat,Arial,sans-serif;cursor:pointer}
+.mew-cookie-mini button:last-child{background:#52382c;color:#fff6e9}
+.mew-cookie-mini a{color:#79482e;text-underline-offset:2px}
+</style>
+<div class="mew-cookie-mini" id="mewCookieMini" hidden role="region" aria-label="Preferências de privacidade">
+<strong>Sua privacidade importa</strong>
+<p>Microsoft Clarity e Google Tag Manager são opcionais. Escolha quais recursos autoriza. <a href="/privacidade.html">Política de Privacidade</a> · <a href="/#contato">Preferências detalhadas</a>.</p>
+<div class="mew-cookie-mini-actions"><button type="button" data-choice="reject">Rejeitar opcionais</button><button type="button" data-choice="analytics">Somente análise</button><button type="button" data-choice="accept">Aceitar opcionais</button></div>
+</div>
+<script>
+(function(){
+  var key="mew_privacy_choice_v1", box=document.getElementById("mewCookieMini");
+  var existing=null;try{existing=JSON.parse(localStorage.getItem(key)||"null")}catch(e){}
+  if(!existing)box.hidden=false;
+  box.addEventListener("click",function(e){
+    var button=e.target.closest("button[data-choice]");if(!button)return;
+    var mode=button.dataset.choice, a=mode!=="reject", m=mode==="accept";
+    try{localStorage.setItem(key,JSON.stringify({analytics:a,marketing:m,updatedAt:new Date().toISOString(),version:1}))}catch(e){}
+    if(window.mewApplyTrackingConsent)window.mewApplyTrackingConsent(a,m);
+    box.hidden=true;
+  });
+})();
+</script>
+</body></html>
