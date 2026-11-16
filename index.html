@@ -454,7 +454,55 @@ footer{background:#1e1512!important;color:#e9d8c8}
   #contato .contact-card .form-intro {margin-bottom:20px;}
 }
 @media(prefers-reduced-motion:reduce){#contato .field input,#contato .field select,#contato .contact-submit{transition:none!important}}
-</style></head>
+</style><!-- Mew: GTM e Microsoft Clarity carregam somente após consentimento opcional. -->
+<script>
+(function(window, document) {
+  var KEY = "mew_privacy_choice_v1";
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
+  window.gtag("consent", "default", {
+    analytics_storage:"denied", ad_storage:"denied",
+    ad_user_data:"denied", ad_personalization:"denied",
+    wait_for_update:500
+  });
+  window.gtag("js", new Date());
+  var initializedGTM=false, initializedClarity=false;
+  function loadGTM(){
+    if(initializedGTM)return;
+    initializedGTM=true;
+    var script=document.createElement("script");
+    script.async=true;
+    script.src="https://www.googletagmanager.com/gtm.js?id=GTM-N8M8M5QK";
+    document.head.appendChild(script);
+    window.dataLayer.push({event:"gtm.js", "gtm.start":Date.now()});
+  }
+  function loadClarity(){
+    if(initializedClarity)return;
+    initializedClarity=true;
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "zeoyz40uyb");
+  }
+  window.mewApplyTrackingConsent = function(analytics,marketing){
+    analytics=!!analytics;marketing=!!marketing;
+    window.gtag("consent","update",{
+      analytics_storage:analytics?"granted":"denied",
+      ad_storage:marketing?"granted":"denied",
+      ad_user_data:marketing?"granted":"denied",
+      ad_personalization:marketing?"granted":"denied"
+    });
+    if(analytics||marketing)loadGTM();
+    if(analytics)loadClarity();
+  };
+  try {
+    var choice=JSON.parse(localStorage.getItem(KEY)||"null");
+    if(choice && (choice.analytics||choice.marketing)) window.mewApplyTrackingConsent(choice.analytics, choice.marketing);
+  } catch(e) {}
+})(window,document);
+</script>
+</head>
 <body>
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 <div class="topbar">ESTRATÉGIA · CRIATIVIDADE · IDENTIDADE</div>
@@ -620,6 +668,7 @@ document.getElementById("leadForm").addEventListener("submit",async (event)=>{
     finally{clearTimeout(timer)}
     const result=await response.json().catch(()=>({}));
     if(!response.ok||result.ok!==true)throw Error(result.message||"Falha de envio");
+    if(window.dataLayer)window.dataLayer.push({event:"mew_lead_success",form_location:"homepage"});
     status.dataset.state="success";status.textContent="Recebemos sua solicitação! Nossa equipe entrará em contato pelo WhatsApp informado.";
     form.reset();
   }catch(error){
@@ -659,7 +708,7 @@ document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
 })();
 </script>
 <div aria-label="Preferências de privacidade" class="cookie-banner" hidden="" id="cookieBanner" role="region">
-<div class="cookie-copy"><strong>Sua privacidade importa.</strong><p>Usamos recursos essenciais para o funcionamento do site. Cookies de análise e marketing só serão ativados com sua autorização, caso sejam implementados. <a href="/privacidade.html">Saiba mais</a>.</p></div>
+<div class="cookie-copy"><strong>Sua privacidade importa.</strong><p>Usamos recursos essenciais para o funcionamento do site. Utilizamos Microsoft Clarity (análise de navegação) e Google Tag Manager (gerenciamento de tags de análise e marketing) apenas após sua autorização. <a href="/privacidade.html">Saiba mais</a>.</p></div>
 <div class="cookie-actions"><button class="cookie-btn outline" id="cookieReject" type="button">Rejeitar opcionais</button><button class="cookie-btn outline" id="cookieCustomize" type="button">Personalizar</button><button class="cookie-btn" id="cookieAccept" type="button">Aceitar opcionais</button></div>
 </div>
 <div class="consent-backdrop" hidden="" id="consentBackdrop"></div>
@@ -680,7 +729,14 @@ const banner=document.getElementById('cookieBanner'), dialog=document.getElement
 const analytics=document.getElementById('allowAnalytics'),marketing=document.getElementById('allowMarketing');
 let lastFocus=null;
 function getChoice(){try{return JSON.parse(localStorage.getItem(KEY)||'null')}catch(e){return null}}
-function saveChoice(a,m){try{localStorage.setItem(KEY,JSON.stringify({analytics:!!a,marketing:!!m,updatedAt:new Date().toISOString(),version:1}))}catch(e){}closeDialog();banner.hidden=true;}
+function saveChoice(a,m){
+  const previous=getChoice();
+  try{localStorage.setItem(KEY,JSON.stringify({analytics:!!a,marketing:!!m,updatedAt:new Date().toISOString(),version:1}))}catch(e){}
+  if(typeof window.mewApplyTrackingConsent==="function")window.mewApplyTrackingConsent(a,m);
+  closeDialog();banner.hidden=true;
+  // Revogações exigem recarregar para remover scripts já carregados.
+  if(previous && ((previous.analytics&&!a)||(previous.marketing&&!m)))window.location.reload();
+}
 function openDialog(){lastFocus=document.activeElement;const c=getChoice();analytics.checked=!!c?.analytics;marketing.checked=!!c?.marketing;dialog.hidden=false;backdrop.hidden=false;banner.hidden=true;document.body.classList.add('modal-open');dialog.focus()}
 function closeDialog(){dialog.hidden=true;backdrop.hidden=true;document.body.classList.remove('modal-open');if(!getChoice())banner.hidden=false;if(lastFocus?.focus)lastFocus.focus()}
 if(!getChoice())banner.hidden=false;
