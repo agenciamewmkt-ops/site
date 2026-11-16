@@ -17,12 +17,12 @@
 <meta property="og:title" content="Agência de Marketing Digital e Redes Sociais | Mew">
 <meta property="og:description" content="Marketing com identidade: estratégia, redes sociais, branding, design e desenvolvimento de sites para empresas.">
 <meta property="og:url" content="https://www.agenciamew.com/">
-<meta property="og:image" content="https://www.agenciamew.com/logo-marrom.png">
-<meta property="og:image:alt" content="Logotipo Mew Marketing Digital">
+<meta property="og:image" content="https://www.agenciamew.com/assets/home/compartilhamento-mew.jpg">
+<meta property="og:image:alt" content="Arte institucional da Mew Marketing Digital em tons marrom, bege e cobre"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Mew | Marketing com identidade">
 <meta name="twitter:description" content="Estratégia, gestão de redes sociais, identidade visual e sites para marcas que querem crescer.">
-<meta name="twitter:image" content="https://www.agenciamew.com/logo-marrom.png">
+<meta name="twitter:image" content="https://www.agenciamew.com/assets/home/compartilhamento-mew.jpg">
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -32,7 +32,7 @@
       "@id":"https://www.agenciamew.com/#organizacao",
       "name":"Mew Marketing Digital",
       "url":"https://www.agenciamew.com/",
-      "logo":{"@type":"ImageObject","url":"https://www.agenciamew.com/logo-marrom.png"},
+      "logo":{"@type":"ImageObject","url":"https://www.agenciamew.com/assets/home/compartilhamento-mew.jpg"},
       "sameAs":["https://www.instagram.com/agencia.mew/"],
       "contactPoint":[{"@type":"ContactPoint","telephone":"+55 12 98131-8313","contactType":"customer service","availableLanguage":"pt-BR"}]
     },
@@ -527,12 +527,31 @@ html.mew-services-motion #solucoes .mew-service-card:not(.is-visible){opacity:0;
 @media(prefers-reduced-motion:reduce){html.mew-services-motion #solucoes .mew-service-card:not(.is-visible){opacity:1;transform:none}#solucoes .mew-service-card,#solucoes .mew-service-media img,#solucoes .mew-service-body a{transition:none!important}}
 </style><script>
 if("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("mew-services-motion");
-</script></head>
+</script><style>
+/* Mew — imagens originais otimizadas (homepage 2026-11) */
+#solucoes .mew-service-media {background:#eadac5;contain:paint}
+#solucoes .mew-service-media img{will-change:transform;object-position:center center;animation:mew-card-image-breathe 13s ease-in-out infinite alternate}
+#solucoes .mew-service-card:nth-child(2) .mew-service-media img{animation-delay:-4s}
+#solucoes .mew-service-card:nth-child(3) .mew-service-media img{animation-delay:-8s}
+#solucoes .mew-service-card:hover .mew-service-media img{animation-play-state:paused;transform:scale(1.075)}
+@keyframes mew-card-image-breathe{from{transform:scale(1)}to{transform:scale(1.055)}}
+.projects .mew-project-art{position:relative;overflow:hidden;padding:0;background:#3a261d;border-radius:18px;min-height:400px;isolation:isolate}
+.projects .mew-project-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform 950ms cubic-bezier(.22,1,.36,1)}
+.projects .project:hover .mew-project-art img{transform:scale(1.055)}
+.projects .mew-project-art::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(30,17,10,.36),transparent 35%,transparent 75%,rgba(30,17,10,.07))}
+.projects .mew-project-art .concept-tag{position:absolute;z-index:2;top:20px;left:22px;color:#fff6eb;letter-spacing:.12em;text-shadow:0 1px 8px rgba(29,14,7,.55);font:700 10px 'Montserrat',sans-serif}
+.about .mew-about-photo{position:relative;display:block;overflow:hidden;border-radius:18px;background:#e7d8c8;min-height:540px;padding:0}
+.about .mew-about-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block}
+.about .mew-about-photo .about-strap{position:absolute;bottom:18px;left:20px;z-index:2;padding:8px 12px;background:rgba(52,31,22,.75);border:1px solid rgba(255,239,220,.2);border-radius:999px;color:#f8eade;font:600 9px/1.4 'Montserrat',sans-serif;letter-spacing:.12em;backdrop-filter:blur(9px)}
+@media(max-width:750px){.projects .mew-project-art,.projects .project:nth-child(3) .mew-project-art{min-height:330px}.about .mew-about-photo{min-height:360px}}
+@media(prefers-reduced-motion:reduce){#solucoes .mew-service-media img{animation:none!important}#solucoes .mew-service-card:hover .mew-service-media img,.projects .project:hover .mew-project-art img{transform:none!important}.projects .mew-project-art img{transition:none!important}}
+</style>
+</head>
 <body>
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 <div class="topbar">ESTRATÉGIA · CRIATIVIDADE · IDENTIDADE</div>
 <header class="header"><div class="wrap nav">
-<a aria-label="Mew, início" class="brand" href="#inicio"><img alt="Mew Marketing Digital" src="logo-bege.png"/></a>
+<a aria-label="Mew, início" class="brand" href="#inicio"><img alt="Mew Marketing Digital" src="/assets/home/logo-bege-otimizado.webp" width="440" height="215" decoding="async" fetchpriority="high"/></a>
 <nav aria-label="Navegação principal" class="links slide-tabs" id="navlinks"><span aria-hidden="true" class="slide-tabs-cursor"></span><a href="#solucoes">Soluções</a><a href="#projetos">Projetos</a><a href="#processo">Processo</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
 <a class="btn" href="#contato">Vamos conversar <span>↗</span></a>
 <button aria-expanded="false" aria-label="Abrir menu" class="menu" id="menu">☰</button>
@@ -579,7 +598,7 @@ if("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-moti
     <div class="mew-service-cards">
       <article class="mew-service-card" aria-labelledby="mew-service-social">
         <div class="mew-service-media">
-          <img src="/assets/services/social-motion.svg" alt="Animação de conteúdos digitais e interfaces de redes sociais em tons de cobre" width="600" height="600" loading="lazy" decoding="async">
+          <img src="/assets/home/social-media.webp" alt="Composição 3D de redes sociais, smartphone e indicadores de engajamento em tons de cobre" width="760" height="760" loading="lazy" decoding="async" sizes="(max-width:740px) 90vw, 33vw">
           <span class="mew-service-media-mark" aria-hidden="true">MEW / 01</span>
         </div>
         <div class="mew-service-body">
@@ -591,7 +610,7 @@ if("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-moti
       </article>
       <article class="mew-service-card" aria-labelledby="mew-service-branding">
         <div class="mew-service-media">
-          <img src="/assets/services/branding-motion.svg" alt="Animação de fitas esculturais em cobre e dourado representando identidade visual" width="600" height="600" loading="lazy" decoding="async">
+          <img src="/assets/home/branding.webp" alt="Escultura abstrata de fitas metálicas em cobre e dourado representando identidade visual" width="760" height="760" loading="lazy" decoding="async" sizes="(max-width:740px) 90vw, 33vw">
           <span class="mew-service-media-mark" aria-hidden="true">MEW / 02</span>
         </div>
         <div class="mew-service-body">
@@ -603,7 +622,7 @@ if("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-moti
       </article>
       <article class="mew-service-card" aria-labelledby="mew-service-web">
         <div class="mew-service-media">
-          <img src="/assets/services/web-motion.svg" alt="Animação de uma página de site rolando dentro de um navegador com elementos interativos" width="600" height="600" loading="lazy" decoding="async">
+          <img src="/assets/home/websites.webp" alt="Interface 3D de website e elementos de design digital em tons bege e cobre" width="760" height="760" loading="lazy" decoding="async" sizes="(max-width:740px) 90vw, 33vw">
           <span class="mew-service-media-mark" aria-hidden="true">MEW / 03</span>
         </div>
         <div class="mew-service-body">
@@ -618,12 +637,12 @@ if("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-moti
 </section>
 <section class="section"><div class="wrap differentials"><div class="reveal"><div class="eyebrow"><span class="section-index">04 / </span>Por que Mew?</div><h2>Mais do que executar tarefas. Pensamos junto com a sua marca.</h2><p class="lead">Um bom trabalho começa muito antes da primeira publicação. É preciso entender o contexto, reconhecer oportunidades e construir uma comunicação coerente em cada detalhe.</p><div class="quote">“Sofisticação está nos detalhes. Estratégia está nas escolhas. Identidade está em tudo.”</div></div><div class="diff-list"><article class="diff reveal"><h3>Cada marca é única</h3><p>Soluções pensadas a partir da realidade, dos objetivos e da personalidade de cada empresa.</p></article><article class="diff reveal"><h3>Estratégia e criatividade</h3><p>Planejamento e execução criativa para que cada entrega tenha intenção e mensagem clara.</p></article><article class="diff reveal"><h3>Visão do todo</h3><p>Consideramos como cada ponto de contato contribui para a percepção da marca.</p></article><article class="diff reveal"><h3>Proximidade real</h3><p>Uma relação transparente, colaborativa e próxima em todas as etapas do projeto.</p></article></div></div></section>
 <section class="section projects" id="projetos"><div class="wrap"><div class="section-head reveal"><div class="eyebrow"><span class="section-index">05 / </span>Projetos selecionados</div><h2>Boas ideias ganham força quando saem do papel.</h2><p class="lead">Cada projeto é uma oportunidade de transformar desafios em soluções por meio de estratégia, design e comunicação.</p></div><div class="project-grid">
-<article class="project reveal"><div aria-label="Composição gráfica conceitual criada para ilustrar os serviços da Mew" class="project-img concept-art concept-1" role="img"><div class="concept-tag">DIREÇÃO CRIATIVA / CONCEITO VISUAL</div><div class="social-mock"><div class="social-top">mew <span>•••</span></div><div class="social-center"><small>CONTEÚDO COM INTENÇÃO</small><strong>MARCA<br/>QUE MARCA.</strong><span>IDENTIDADE EM CADA DETALHE ↗</span></div><div class="social-bottom"><span>♡ ◇ ↗</span><span>01 / 03</span></div></div></div><div class="project-meta"><small>MARKETING E REDES SOCIAIS</small><h3>Conteúdo com identidade</h3><p>Exploração visual de uma comunicação social consistente e autoral.</p><a class="text-link" href="#contato">Conversar sobre um projeto ↗</a></div></article>
-<article class="project reveal"><div aria-label="Composição gráfica conceitual criada para ilustrar os serviços da Mew" class="project-img concept-art concept-2" role="img"><div class="concept-tag">IDENTIDADE / ESTUDO DE COMPOSIÇÃO</div><div class="brand-mock"><span class="brand-circle"></span><div class="brand-mark">m<span>.</span></div><div class="brand-line">ESTRATÉGIA <i>×</i> IDENTIDADE</div><div class="brand-swatches"><b></b><b></b><b></b></div></div></div><div class="project-meta"><small>BRANDING E IDENTIDADE VISUAL</small><h3>Identidade que comunica</h3><p>Estudo de linguagem gráfica, contraste e personalidade de marca.</p><a class="text-link" href="#contato">Conversar sobre um projeto ↗</a></div></article>
-<article class="project reveal"><div aria-label="Composição gráfica conceitual criada para ilustrar os serviços da Mew" class="project-img concept-art concept-3" role="img"><div class="concept-tag">WEB DESIGN / ESTUDO DE INTERFACE</div><div class="web-mock"><div class="web-top"><span>◉</span><span>○ ○ ○</span></div><div class="web-body"><small>IDEIAS QUE GANHAM FORMA</small><strong>Design que<br/><i>faz sentido.</i></strong><span class="web-pill">Explorar conceito ↗</span></div><div class="web-bottom"><span>01</span><span>ESTRATÉGIA &amp; DESIGN</span></div></div></div><div class="project-meta"><small>WEBSITE E EXPERIÊNCIA DIGITAL</small><h3>Experiências digitais</h3><p>Estudo de interface que combina clareza, estética e navegação.</p><a class="text-link" href="#contato">Conversar sobre um projeto ↗</a></div></article>
+<article class="project reveal"><div class="project-img mew-project-art"><img src="/assets/home/concept-social.webp" alt="Composição conceitual de posts e peças de marketing com fitas de cobre em fundo marrom" width="900" height="720" loading="lazy" decoding="async"><span class="concept-tag">DIREÇÃO CRIATIVA / ESTUDO CONCEITUAL</span></div><div class="project-meta"><small>MARKETING E REDES SOCIAIS</small><h3>Conteúdo com identidade</h3><p>Exploração visual de uma comunicação social consistente e autoral.</p><a class="text-link" href="#contato">Conversar sobre um projeto ↗</a></div></article>
+<article class="project reveal"><div class="project-img mew-project-art"><img src="/assets/home/concept-branding.webp" alt="Estudo conceitual de identidade visual com brandboard, paleta marrom e escultura metálica" width="900" height="720" loading="lazy" decoding="async"><span class="concept-tag">IDENTIDADE / ESTUDO CONCEITUAL</span></div><div class="project-meta"><small>BRANDING E IDENTIDADE VISUAL</small><h3>Identidade que comunica</h3><p>Estudo de linguagem gráfica, contraste e personalidade de marca.</p><a class="text-link" href="#contato">Conversar sobre um projeto ↗</a></div></article>
+<article class="project reveal"><div class="project-img mew-project-art"><img src="/assets/home/concept-websites.webp" alt="Estudo conceitual de site em mockup de navegador com layout cobre e bege" width="900" height="720" loading="lazy" decoding="async"><span class="concept-tag">WEB DESIGN / ESTUDO CONCEITUAL</span></div><div class="project-meta"><small>WEBSITE E EXPERIÊNCIA DIGITAL</small><h3>Experiências digitais</h3><p>Estudo de interface que combina clareza, estética e navegação.</p><a class="text-link" href="#contato">Conversar sobre um projeto ↗</a></div></article>
 </div><p class="micro">Estudos visuais conceituais para demonstrar nossa direção criativa. Não representam clientes, trabalhos contratados ou resultados reais.</p></div></section>
 <section class="section" id="processo"><div class="wrap process"><div class="reveal"><div class="eyebrow"><span class="section-index">06 / </span>Nosso processo</div><h2>Um processo claro. Uma construção em conjunto.</h2><p class="lead">Cada projeto tem suas particularidades, mas seguimos uma jornada que mantém estratégia, organização e transparência do início à entrega.</p><a class="btn secondary" href="#contato">Vamos começar? ↗</a></div><div class="steps"><div class="step reveal"><strong>01</strong><div><h3>Conversa e diagnóstico</h3><p>Entendemos sua empresa, seu momento, seus desafios e onde deseja chegar.</p></div></div><div class="step reveal"><strong>02</strong><div><h3>Estratégia e planejamento</h3><p>Definimos prioridades, objetivos e o caminho mais adequado para o projeto.</p></div></div><div class="step reveal"><strong>03</strong><div><h3>Criação e desenvolvimento</h3><p>Transformamos o planejamento em soluções concretas, conectando conceito, design e execução.</p></div></div><div class="step reveal"><strong>04</strong><div><h3>Apresentação e alinhamento</h3><p>Apresentamos as entregas, coletamos feedbacks e realizamos os ajustes previstos.</p></div></div><div class="step reveal"><strong>05</strong><div><h3>Entrega e evolução</h3><p>Finalizamos o projeto e alinhamos os próximos passos para evoluir a presença da marca.</p></div></div></div></div></section>
-<section class="section about" id="sobre"><div class="wrap about-grid"><div class="about-visual reveal"><div class="about-monogram">m<span>e</span>w.</div><div class="about-strap">ESTRATÉGIA × DESIGN × IDENTIDADE</div></div><div class="reveal"><div class="eyebrow"><span class="section-index">07 / </span>Sobre a Mew</div><h2>Por trás de cada marca, existem pessoas. E é por elas que tudo começa.</h2><p>A Mew nasceu da vontade de fazer marketing de uma forma mais consciente, criativa e conectada à realidade de cada negócio.</p><p>Acreditamos que uma marca não se constrói apenas com uma identidade bonita ou uma presença constante nas redes sociais. Ela se fortalece quando existe intenção em cada escolha, coerência em cada mensagem e estratégia em cada ação.</p><p>Somos movidos por ideias, atenção aos detalhes e pela busca constante de novas possibilidades.</p><h3>Mew. Marketing com identidade.</h3><a class="btn light" href="#contato">Vamos conversar sobre sua marca ↗</a></div></div></section>
+<section class="section about" id="sobre"><div class="wrap about-grid"><div class="about-visual mew-about-photo reveal"><img src="/assets/home/sobre-mew.webp" width="780" height="800" loading="lazy" decoding="async" alt="Imagem conceitual da Mew com escultura em cobre e logotipo oficial sobre fundo bege"><div class="about-strap">ESTRATÉGIA × DESIGN × IDENTIDADE</div></div><div class="reveal"><div class="eyebrow"><span class="section-index">07 / </span>Sobre a Mew</div><h2>Por trás de cada marca, existem pessoas. E é por elas que tudo começa.</h2><p>A Mew nasceu da vontade de fazer marketing de uma forma mais consciente, criativa e conectada à realidade de cada negócio.</p><p>Acreditamos que uma marca não se constrói apenas com uma identidade bonita ou uma presença constante nas redes sociais. Ela se fortalece quando existe intenção em cada escolha, coerência em cada mensagem e estratégia em cada ação.</p><p>Somos movidos por ideias, atenção aos detalhes e pela busca constante de novas possibilidades.</p><h3>Mew. Marketing com identidade.</h3><a class="btn light" href="#contato">Vamos conversar sobre sua marca ↗</a></div></div></section>
 <section class="section philosophy" id="filosofia"><div class="wrap"><div class="eyebrow reveal"><span class="section-index">08 / </span>O que orienta nosso trabalho</div><div class="philosophy-grid"><div><h2 class="reveal">Não é sobre fazer mais barulho.<br/><em>É sobre fazer sentido.</em></h2><p class="lead reveal">Cada decisão importa: da primeira conversa à última entrega. Nosso compromisso é construir uma comunicação que tenha a cara da sua empresa.</p><a class="text-link reveal" href="#contato">Vamos criar juntos ↗</a></div><div class="philosophy-tiles"><div class="philosophy-tile reveal"><span>01 /</span><h3>Autenticidade</h3><p>Uma marca não precisa se parecer com todas as outras.</p></div><div class="philosophy-tile reveal"><span>02 /</span><h3>Clareza</h3><p>Boas ideias ganham força quando têm direção.</p></div><div class="philosophy-tile reveal"><span>03 /</span><h3>Proximidade</h3><p>Trabalhamos com pessoas, não apenas com perfis.</p></div></div></div></div></section>
 <section class="section" id="faq"><div class="wrap faq"><div class="reveal"><div class="eyebrow"><span class="section-index">09 / </span>Dúvidas frequentes</div><h2>Talvez você esteja se perguntando…</h2><p class="lead">Se ainda ficou alguma dúvida sobre como podemos trabalhar juntos, reunimos algumas respostas para ajudar.</p></div><div class="faq-list">
 <div class="faq-item"><button aria-expanded="false" class="faq-q">A Mew atende empresas de quais segmentos?<span class="plus">+</span></button><div class="faq-a">Trabalhamos com empresas de diferentes segmentos que desejam fortalecer sua marca, profissionalizar sua presença digital ou desenvolver estratégias de marketing alinhadas aos seus objetivos.</div></div>
