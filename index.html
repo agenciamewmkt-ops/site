@@ -457,7 +457,7 @@ footer{background:#1e1512!important;color:#e9d8c8}
 </style><!-- Mew: GTM e Microsoft Clarity carregam somente após consentimento opcional. -->
 <script>
 (function(window, document) {
-  var KEY = "mew_privacy_choice_v1";
+  var KEY = "mew_privacy_choice_v2";
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
   window.gtag("consent", "default", {
@@ -724,14 +724,14 @@ document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
 </section>
 <script>
 (function(){
-const KEY='mew_privacy_choice_v1';
+const KEY='mew_privacy_choice_v2';
 const banner=document.getElementById('cookieBanner'), dialog=document.getElementById('consentDialog'), backdrop=document.getElementById('consentBackdrop');
 const analytics=document.getElementById('allowAnalytics'),marketing=document.getElementById('allowMarketing');
 let lastFocus=null;
 function getChoice(){try{return JSON.parse(localStorage.getItem(KEY)||'null')}catch(e){return null}}
 function saveChoice(a,m){
   const previous=getChoice();
-  try{localStorage.setItem(KEY,JSON.stringify({analytics:!!a,marketing:!!m,updatedAt:new Date().toISOString(),version:1}))}catch(e){}
+  try{localStorage.setItem(KEY,JSON.stringify({analytics:!!a,marketing:!!m,updatedAt:new Date().toISOString(),version:2}))}catch(e){}
   if(typeof window.mewApplyTrackingConsent==="function")window.mewApplyTrackingConsent(a,m);
   closeDialog();banner.hidden=true;
   // Revogações exigem recarregar para remover scripts já carregados.
